@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <div
       style={{
-        width: '100vw',
+        width: '960px',
         height: '100vh',
         // display: 'flex',
         // justifyContent: 'space-around',
@@ -18,6 +18,13 @@ const Index = () => {
       }}
     >
       <Menu menuHeight={menuHeight} />
+      <div>
+        let us: Go!
+        <br />
+        [2018 Spring]
+        <br />
+        session A
+      </div>
       <div
         style={{
           height: `calc(100vh - ${menuHeight}px)`,

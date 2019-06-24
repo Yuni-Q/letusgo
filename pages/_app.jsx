@@ -190,7 +190,9 @@ const MyApp = ({ Component, store, pageProps }) => (
           },
         ]}
       />
-      <Component {...pageProps} />
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Component {...pageProps} />
+      </div>
     </Provider>
   </Container>
 );
