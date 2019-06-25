@@ -481,9 +481,6 @@ const SessionA = () => {
             }}
           />
         </form>
-        {/* <button type="button" onClick={onClick}>
-              신청
-            </button> */}
       </div>
     </div>
   );

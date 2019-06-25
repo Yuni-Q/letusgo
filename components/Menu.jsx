@@ -10,6 +10,9 @@ const Menu = ({ menuHeight }) => {
         display: 'flex',
         justifyContent: 'space-around',
         height: `${menuHeight}`,
+        position: 'absolute',
+        top: 0,
+        right: 0,
       }}
     >
       <div>
