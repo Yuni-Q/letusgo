@@ -17,7 +17,7 @@ dotenv.config();
 
 app.prepare().then(() => {
   const server = express();
-  // server.use('static ', express.static('./static'));
+  server.use('static ', express.static('./static'));
   server.use(handle);
   server.use(morgan('dev'));
   server.use(express.json());

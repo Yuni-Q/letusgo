@@ -1,41 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import { Link } from '../routes';
-
-const Menu = ({ menuHeight }) => {
+const Menu = () => {
   return (
     <div
       style={{
         display: 'flex',
-        justifyContent: 'space-around',
-        height: `${menuHeight}`,
-        position: 'absolute',
+        justifyContent: 'center',
+        position: 'fixed',
         top: 0,
         right: 0,
+        width: '100vw',
+        backgroundColor: 'gray',
       }}
     >
-      <div>
-        <Link route="/" href="/">
-          now
-        </Link>
-      </div>
-      <div>
-        <Link route="/session" href="/session">
-          session
-        </Link>
-      </div>
-      <div>
-        <Link route="/my" href="/my">
-          my
-        </Link>
+      <div style={{ width: '960px' }}>
+        <div
+          style={{
+            margin: '18px 0',
+            fontSize: '20px',
+            fontWeight: 'bold',
+          }}
+        >
+          <img src="/static/logo_let us: Go!.svg" alt="" />
+        </div>
       </div>
     </div>
   );
-};
-
-Menu.propTypes = {
-  menuHeight: PropTypes.any.isRequired,
 };
 
 export default Menu;
