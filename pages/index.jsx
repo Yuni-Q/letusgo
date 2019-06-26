@@ -1,7 +1,20 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 
 import Menu from '../components/Menu';
 import { color } from '../common/color';
+
+const StyledLayout = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 60px 0;
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 const Index = () => {
   const [trackA1, setTrackA1] = useState(false);
@@ -16,7 +29,8 @@ const Index = () => {
   return (
     <div
       style={{
-        width: '960px',
+        maxWidth: '960px',
+        width: '100vw',
       }}
     >
       <Menu />
@@ -29,14 +43,8 @@ const Index = () => {
       >
         [2018 Spring]
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          margin: '0 0 60px 0',
-        }}
-      >
-        <div style={{ width: '460px', margin: '0 10px' }}>
+      <StyledLayout>
+        <div style={{ width: '100vw', margin: '0 10px', maxWidth: '460px' }}>
           <div
             style={{
               display: 'flex',
@@ -174,7 +182,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxmaxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -205,6 +213,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -214,7 +223,9 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxwidth: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -266,7 +277,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -297,6 +308,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -306,7 +318,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -357,7 +370,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -388,6 +401,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -397,7 +411,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -447,7 +462,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -478,6 +493,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -487,7 +503,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -523,7 +540,7 @@ const Index = () => {
             )}
           </div>
         </div>
-        <div style={{ width: '460px', margin: '0 10px' }}>
+        <div style={{ width: '100vw', maxWidth: '460px', margin: '0 10px' }}>
           <div
             style={{
               display: 'flex',
@@ -662,7 +679,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -693,6 +710,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -702,7 +720,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -759,7 +778,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -790,6 +809,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -799,7 +819,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -856,7 +877,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -887,6 +908,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -896,7 +918,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -952,7 +975,7 @@ const Index = () => {
                 </div>
                 <div
                   style={{
-                    width: '174px',
+                    maxWidth: '174px',
                     margin: '0 24px 0 0',
                     lineHeight: '22px',
                   }}
@@ -983,6 +1006,7 @@ const Index = () => {
                   padding: '15px 0 0 16px',
                   borderTop: '1px solid',
                   margin: '24px 0 0 96px',
+                  maxwidth: '100vw',
                 }}
               >
                 <div
@@ -992,7 +1016,8 @@ const Index = () => {
                 >
                   <div
                     style={{
-                      width: '151px',
+                      width: '100vw',
+                      maxWidth: '151px',
                       height: '151px',
                       background: 'gray',
                       padding: '0 0 16px 0',
@@ -1028,10 +1053,11 @@ const Index = () => {
             )}
           </div>
         </div>
-      </div>
+      </StyledLayout>
       <div
         style={{
-          width: '960px',
+          width: '100vw',
+          maxWidth: '960px',
           height: '70px',
           display: 'flex',
           justifyContent: 'center',
@@ -1040,18 +1066,22 @@ const Index = () => {
           borderRadius: '20px',
         }}
       >
-        <input
+        <div
           style={{
-            border: '0px solid white',
+            border: `0px solid ${color.black}`,
             fontSize: '20px',
             color: 'white',
             backgroundColor: color.black,
           }}
-          type="button"
-          value="신청하기"
-        />
+        >
+          신청하기
+        </div>
       </div>
-      <img src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg" alt="" />
+      <img
+        style={{ maxWidth: '960px', width: '100vw' }}
+        src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg"
+        alt=""
+      />
     </div>
   );
 };

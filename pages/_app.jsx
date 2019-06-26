@@ -11,6 +11,7 @@ import Helmet from 'react-helmet';
 
 import reducer from '../reducers';
 import rootSaga from '../sagas';
+import Footer from '../components/Footer';
 
 const MyApp = ({ Component, store, pageProps }) => (
   <Container>
@@ -70,6 +71,7 @@ const MyApp = ({ Component, store, pageProps }) => (
       >
         <Component {...pageProps} />
       </div>
+      <Footer />
     </Provider>
   </Container>
 );
