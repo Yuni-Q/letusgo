@@ -42,7 +42,7 @@ const Index = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              border: '1px solid',
+              borderBottom: `2px solid ${color.electricBlue}`,
               margin: '0 0 20px 0',
             }}
           >
@@ -51,9 +51,10 @@ const Index = () => {
                 fontSize: '28px',
                 fontWeight: 'bold',
                 margin: '8px 0',
+                color: color.electricBlue,
               }}
             >
-              track A
+              Track A
             </div>
           </div>
           <div style={{}}>
@@ -61,45 +62,51 @@ const Index = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
-              <div style={{ fontWeight: 'bold' }}>application</div>
+              <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
+                Application
+              </div>
               <div>100명</div>
             </div>
             <div
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
-              <div style={{ fontWeight: 'bold' }}>venue</div>
+              <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
+                Venue
+              </div>
               <div>코엑스 아트홀</div>
             </div>
             <div
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
-              <div style={{ fontWeight: 'bold' }}>Entry fee</div>
+              <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
+                Entry fee
+              </div>
               <div>일반 20,000원</div>
             </div>
             <div
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
               <div>&nbsp;</div>
@@ -113,7 +120,9 @@ const Index = () => {
               }}
             >
               <div>&nbsp;</div>
-              <div>(장소 대여 및 간단한 다과)</div>
+              <div style={{ fontSize: '13px', color: color.brownGrey }}>
+                (장소 대여 및 간단한 다과)
+              </div>
             </div>
           </div>
           <div
@@ -121,14 +130,15 @@ const Index = () => {
               fontSize: '20px',
               fontWeight: 'bold',
               margin: '0 0 20px 0',
+              color: color.electricBlue,
             }}
           >
-            schedule
+            Schedule
           </div>
           <div
             style={{
               display: 'flex',
-              borderBottom: '1px solid',
+              borderBottom: `2px solid ${color.electricBlue}`,
               padding: '0 0 12px 24px',
             }}
           >
@@ -139,7 +149,7 @@ const Index = () => {
                 margin: '0 24px',
               }}
             >
-              <hr />
+              <hr style={{ border: `solid 1px ${color.electricBlue}` }} />
             </div>
             <div>Now</div>
           </div>
@@ -148,23 +158,31 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex' }}>
-                <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                  <div>12:30</div>
-                  <div>01:20</div>
+                <div
+                  style={{
+                    margin: '0 24px',
+                    lineHeight: '22px',
+                  }}
+                >
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name!!!</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -237,23 +255,26 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex' }}>
                 <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -325,23 +346,26 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex' }}>
                 <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -411,25 +435,27 @@ const Index = () => {
           <div
             onClick={() => setTrackA4(!trackA4)}
             style={{
-              borderBottom: '1px solid',
-              padding: '24px 0',
+              borderBottom: `2px solid ${color.electricBlue}`,
+              padding: '24px 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex' }}>
                 <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -503,7 +529,7 @@ const Index = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              border: `1px solid ${color.electricBlue}`,
+              borderBottom: `2px solid ${color.electricBlue}`,
               margin: '0 0 20px 0',
             }}
           >
@@ -515,7 +541,7 @@ const Index = () => {
                 color: color.electricBlue,
               }}
             >
-              track B
+              Track B
             </div>
           </div>
           <div style={{}}>
@@ -523,13 +549,13 @@ const Index = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
               <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
-                application
+                Application
               </div>
               <div>100명</div>
             </div>
@@ -537,13 +563,13 @@ const Index = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
               <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
-                venue
+                Venue
               </div>
               <div>코엑스 아트홀</div>
             </div>
@@ -551,9 +577,9 @@ const Index = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
               <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
@@ -565,9 +591,9 @@ const Index = () => {
               style={{
                 display: 'flex',
                 justifyContent: 'space-between',
-                margin: '18px 0 0 0',
+                margin: '18px 8px',
                 borderBottom: '1px solid',
-                padding: '0 20px 14px 20px',
+                padding: '0 12px 14px 12px',
               }}
             >
               <div>&nbsp;</div>
@@ -581,7 +607,9 @@ const Index = () => {
               }}
             >
               <div>&nbsp;</div>
-              <div>(장소 대여 및 간단한 다과)</div>
+              <div style={{ fontSize: '13px', color: color.brownGrey }}>
+                (장소 대여 및 간단한 다과)
+              </div>
             </div>
           </div>
           <div
@@ -592,12 +620,12 @@ const Index = () => {
               color: color.electricBlue,
             }}
           >
-            schedule
+            Schedule
           </div>
           <div
             style={{
               display: 'flex',
-              borderBottom: '1px solid',
+              borderBottom: `2px solid ${color.electricBlue}`,
               padding: '0 0 12px 24px',
             }}
           >
@@ -608,7 +636,7 @@ const Index = () => {
                 margin: '0 24px',
               }}
             >
-              <hr />
+              <hr style={{ border: `solid 1px ${color.electricBlue}` }} />
             </div>
             <div>Now</div>
           </div>
@@ -617,6 +645,7 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -625,21 +654,23 @@ const Index = () => {
                   style={{
                     margin: '0 24px',
                     color: color.electricBlue,
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -650,9 +681,9 @@ const Index = () => {
                 }}
               >
                 {trackB1 ? (
-                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
                 ) : (
-                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
                 )}
               </div>
             </div>
@@ -711,6 +742,7 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -719,21 +751,23 @@ const Index = () => {
                   style={{
                     margin: '0 24px',
                     color: color.electricBlue,
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -744,9 +778,9 @@ const Index = () => {
                 }}
               >
                 {trackB2 ? (
-                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
                 ) : (
-                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
                 )}
               </div>
             </div>
@@ -805,6 +839,7 @@ const Index = () => {
             style={{
               borderBottom: '1px solid',
               padding: '24px 0',
+              margin: '0 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -813,21 +848,23 @@ const Index = () => {
                   style={{
                     margin: '0 24px',
                     color: color.electricBlue,
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -838,9 +875,9 @@ const Index = () => {
                 }}
               >
                 {trackB3 ? (
-                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
                 ) : (
-                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
                 )}
               </div>
             </div>
@@ -897,8 +934,8 @@ const Index = () => {
           <div
             onClick={() => setTrackB4(!trackB4)}
             style={{
-              borderBottom: '1px solid',
-              padding: '24px 0',
+              borderBottom: `2px solid ${color.electricBlue}`,
+              padding: '24px 12px',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -907,21 +944,23 @@ const Index = () => {
                   style={{
                     margin: '0 24px',
                     color: color.electricBlue,
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div>12:30</div>
-                  <div>01:20</div>
+                  <div style={{ color: color.electricBlue }}>12:30</div>
+                  <div style={{ color: color.electricBlue }}>01:20</div>
                 </div>
                 <div
                   style={{
                     width: '174px',
                     margin: '0 24px 0 0',
-                    lineHeight: '20px',
+                    lineHeight: '22px',
                   }}
                 >
-                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                  <div>Section TITLE</div>
+                  <div style={{ fontWeight: 'bold', fontSize: '20px' }}>
+                    Speker name!!!
+                  </div>
+                  <div style={{ fontSize: '16px' }}>Section TITLE</div>
                 </div>
               </div>
               <div
@@ -932,9 +971,9 @@ const Index = () => {
                 }}
               >
                 {trackB4 ? (
-                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
                 ) : (
-                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
                 )}
               </div>
             </div>
