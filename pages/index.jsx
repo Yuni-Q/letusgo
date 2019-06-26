@@ -33,6 +33,7 @@ const Index = () => {
         style={{
           display: 'flex',
           justifyContent: 'space-between',
+          margin: '0 0 60px 0',
         }}
       >
         <div style={{ width: '460px', margin: '0 10px' }}>
@@ -145,158 +146,355 @@ const Index = () => {
           <div
             onClick={() => setTrackA1(!trackA1)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div style={{ margin: '0 24px', lineHeight: '20px' }}>
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name!!!</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name!!!</div>
-                <div>Section TITLE</div>
+                {trackA1 ? (
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackA1 ? (
-                <img src="/static/icon_arrow_up_black.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_black.svg" alt="" />
-              )}
-            </div>
+            {!!trackA1 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
+
           <div
             onClick={() => setTrackA2(!trackA2)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div style={{ margin: '0 24px', lineHeight: '20px' }}>
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackA2 ? (
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackA2 ? (
-                <img src="/static/icon_arrow_up_black.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_black.svg" alt="" />
-              )}
-            </div>
+            {!!trackA2 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
           <div
             onClick={() => setTrackA3(!trackA3)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div style={{ margin: '0 24px', lineHeight: '20px' }}>
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackA3 ? (
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackA3 ? (
-                <img src="/static/icon_arrow_up_black.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_black.svg" alt="" />
-              )}
-            </div>
+            {!!trackA3 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
           <div
             onClick={() => setTrackA4(!trackA4)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div style={{ margin: '0 24px', lineHeight: '20px' }}>
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div style={{ margin: '0 24px', lineHeight: '20px' }}>
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackA4 ? (
+                  <img src="/static/icon_arrow_up_black.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_black.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackA4 ? (
-                <img src="/static/icon_arrow_up_black.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_black.svg" alt="" />
-              )}
-            </div>
+            {!!trackA4 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div style={{ width: '460px', margin: '0 10px' }}>
@@ -417,184 +615,402 @@ const Index = () => {
           <div
             onClick={() => setTrackB1(!trackB1)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div
-                style={{
-                  margin: '0 24px',
-                  color: color.electricBlue,
-                  lineHeight: '20px',
-                }}
-              >
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div
+                  style={{
+                    margin: '0 24px',
+                    color: color.electricBlue,
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackB1 ? (
+                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackB1 ? (
-                <img src="/static/icon_arrow_up_blue.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_blue.svg" alt="" />
-              )}
-            </div>
+            {!!trackB1 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
           <div
             onClick={() => setTrackB2(!trackB2)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div
-                style={{
-                  margin: '0 24px',
-                  color: color.electricBlue,
-                  lineHeight: '20px',
-                }}
-              >
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div
+                  style={{
+                    margin: '0 24px',
+                    color: color.electricBlue,
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackB2 ? (
+                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackB2 ? (
-                <img src="/static/icon_arrow_up_blue.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_blue.svg" alt="" />
-              )}
-            </div>
+            {!!trackB2 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
           <div
             onClick={() => setTrackB3(!trackB3)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div
-                style={{
-                  margin: '0 24px',
-                  color: color.electricBlue,
-                  lineHeight: '20px',
-                }}
-              >
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div
+                  style={{
+                    margin: '0 24px',
+                    color: color.electricBlue,
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackB3 ? (
+                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackB3 ? (
-                <img src="/static/icon_arrow_up_blue.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_blue.svg" alt="" />
-              )}
-            </div>
+            {!!trackB3 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
           <div
             onClick={() => setTrackB4(!trackB4)}
             style={{
-              display: 'flex',
-              justifyContent: 'space-between',
               borderBottom: '1px solid',
               padding: '24px 0',
             }}
           >
-            <div style={{ display: 'flex' }}>
-              <div
-                style={{
-                  margin: '0 24px',
-                  color: color.electricBlue,
-                  lineHeight: '20px',
-                }}
-              >
-                <div>12:30</div>
-                <div>01:20</div>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex' }}>
+                <div
+                  style={{
+                    margin: '0 24px',
+                    color: color.electricBlue,
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div>12:30</div>
+                  <div>01:20</div>
+                </div>
+                <div
+                  style={{
+                    width: '174px',
+                    margin: '0 24px 0 0',
+                    lineHeight: '20px',
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold' }}>Speker name</div>
+                  <div>Section TITLE</div>
+                </div>
               </div>
               <div
                 style={{
-                  width: '174px',
-                  margin: '0 24px 0 0',
-                  lineHeight: '20px',
+                  margin: '0 10px 0 0',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
-                <div style={{ fontWeight: 'bold' }}>Speker name</div>
-                <div>Section TITLE</div>
+                {trackB4 ? (
+                  <img src="/static/icon_arrow_up_blue.svg" alt="" />
+                ) : (
+                  <img src="/static/icon_arrow_down_blue.svg" alt="" />
+                )}
               </div>
             </div>
-            <div
-              style={{
-                margin: '0 10px 0 0',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              {trackB4 ? (
-                <img src="/static/icon_arrow_up_blue.svg" alt="" />
-              ) : (
-                <img src="/static/icon_arrow_down_blue.svg" alt="" />
-              )}
-            </div>
+            {!!trackB4 && (
+              <div
+                style={{
+                  padding: '15px 0 0 16px',
+                  borderTop: '1px solid',
+                  margin: '24px 0 0 96px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '0 0 16px 0',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '151px',
+                      height: '151px',
+                      background: 'gray',
+                      padding: '0 0 16px 0',
+                    }}
+                  />
+                </div>
+                <div style={{ padding: '0 0 16px 0' }}>설명</div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <div style={{ width: '68px', padding: '0 0 3px 0' }}>
+                    email
+                  </div>
+                  <div>abc@naver.com</div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          width: '960px',
+          height: '70px',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: color.black,
+          borderRadius: '20px',
+        }}
+      >
+        <input
+          style={{
+            border: '0px solid white',
+            fontSize: '20px',
+            color: 'white',
+            backgroundColor: color.black,
+          }}
+          type="button"
+          value="신청하기"
+        />
       </div>
       <img src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg" alt="" />
     </div>
