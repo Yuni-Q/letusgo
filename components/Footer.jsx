@@ -5,23 +5,22 @@ import { color } from '../common/color';
 
 const StyledFooter = styled.div`
   display: flex;
-  justifycontent: space-between;
+  justify-content: space-between;
   height: 81px;
-  alignitems: center;
-  maxwidth: 960px;
+  align-items: center;
+  max-width: 960px;
   width: 100vw;
   @media (max-width: 950px) {
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
     justifycontent: center;
     align-items: center;
-  }
-  * {
-    margin: 0 0 20px 0;
-  }
-  :first-child {
-    margin: 0 0 25px 0;
+    img {
+      margin 20px;
+    }
+
   }
 `;
 
@@ -153,6 +152,7 @@ const Footer = () => {
           width: '100vw',
           display: 'flex',
           justifyContent: 'center',
+          border: `1px solid ${color.black}`,
         }}
       >
         <StyledFooter>

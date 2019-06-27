@@ -4,6 +4,7 @@ export const color = {
   brownGrey: '#a0a0a0',
   warmwhite: '#fafafa',
   white: '#ffffff',
+  warmGrey: '#a0a0a0',
 };
 
 export default color;
