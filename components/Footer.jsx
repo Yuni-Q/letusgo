@@ -50,6 +50,13 @@ const StyledFooterPhone = styled.div`
 `;
 
 const Footer = () => {
+  const onClickMail = () => {
+    window.location.href =
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=keywindow@naver.com';
+  };
+  const onClickPhone = () => {
+    window.location.href = 'https://open.kakao.com/o/gyLape';
+  };
   return (
     <div>
       <div
@@ -89,7 +96,7 @@ const Footer = () => {
                 fontWeight: 'bold',
               }}
             >
-              코엑스 그랜드볼룸 (Coex Grand Ballroom)
+              서울특별시 서대문구 연희로2길 62 한빛미디어
             </div>
             <div
               style={{
@@ -99,13 +106,8 @@ const Footer = () => {
                 margin: '0 0 51px 0',
               }}
             >
-              <div>
-                그랜드볼룸은 봉은사 맞은편 코엑스 1층 북문 쪽에 위치해 있습니다.
-              </div>
-              <div>
-                지하철 이용 시 9호선 봉은사역 7번 출구를 이용하시거나 삼성역 6번
-                출구를 이용하시면 됩니다
-              </div>
+              <div />
+              <div />
             </div>
             <StyledFooterInfo>
               <StyledFooterLocation>
@@ -119,10 +121,8 @@ const Footer = () => {
                   장소
                 </div>
                 <div style={{ fontWeight: 'bold' }}>
-                  <div>서울 강남구 영동대로 513 코엑스,</div>
-                  <div style={{ maxWidth: '321px' }}>
-                    (지번) 삼성동 159 코엑스
-                  </div>
+                  <div>서울특별시 서대문구 연희로2길 62 한빛미디어</div>
+                  <div style={{ maxWidth: '321px' }} />
                 </div>
               </StyledFooterLocation>
               <div>
@@ -137,7 +137,7 @@ const Footer = () => {
                     연락처
                   </div>
                   <div style={{ fontWeight: 'bold' }}>
-                    <div>02-1111-1111</div>
+                    <div>keyWindow@naver.com</div>
                   </div>
                 </StyledFooterPhone>
               </div>
@@ -160,6 +160,7 @@ const Footer = () => {
           <div>© iOS Developers Korea</div>
           <div style={{ display: 'flex' }}>
             <img
+              onClick={onClickMail}
               style={{
                 width: '40px',
                 height: '40px',
@@ -168,6 +169,7 @@ const Footer = () => {
               alt=""
             />
             <img
+              onClick={onClickPhone}
               style={{
                 width: '40px',
                 height: '40px',

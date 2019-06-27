@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledScheduleSectionDetailInfo = styled.div`
-  display: 'flex';
+  display: flex;
 `;
 
 const ScheduleSectionDetailInfo = ({ title, description }) => {

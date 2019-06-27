@@ -4,7 +4,15 @@ import PropTypes from 'prop-types';
 import { color } from '../common/color';
 import ScheduleSectionDetail from './ScheduleSectionDetail';
 
-const ScheduleSession = ({ start, end, title, name, infos }) => {
+const ScheduleSession = ({
+  start,
+  end,
+  title,
+  name,
+  infos,
+  image,
+  description,
+}) => {
   const [track, setTrack] = useState(false);
   return (
     <div
@@ -52,7 +60,12 @@ const ScheduleSession = ({ start, end, title, name, infos }) => {
           )}
         </div>
       </div>
-      <ScheduleSectionDetail show={!!track} infos={infos} />
+      <ScheduleSectionDetail
+        show={!!track}
+        infos={infos}
+        image={image}
+        description={description}
+      />
     </div>
   );
 };
@@ -63,6 +76,8 @@ ScheduleSession.propTypes = {
   title: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   infos: PropTypes.array.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default ScheduleSession;

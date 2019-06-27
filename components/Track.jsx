@@ -6,11 +6,7 @@ import ScheduleSession from './ScheduleSection';
 import { color } from '../common/color';
 // import TrackInfo from './TrackInfo';
 
-const Track = ({
-  title,
-  schedule,
-  // trackInfo
-}) => {
+const Track = ({ title, schedule, trackInfo }) => {
   return (
     <div style={{ width: '100vw', margin: '0 10px', maxWidth: '460px' }}>
       <div
@@ -43,13 +39,18 @@ const Track = ({
         >
           <div style={{ margin: '18px 20px 35px 18px', lineHeight: '20px' }}>
             <div>참가비</div>
-            <div style={{ fontSize: '13px', color: color.warmGrey }}>
-              (장소 대여 및 간단한 다과)
+            <div>
+              <div style={{ fontSize: '13px', color: color.warmGrey }}>
+                (장소 대여 및 간단한 다과)
+              </div>
+              <div style={{ fontSize: '13px', color: color.warmGrey }}>
+                * a트랙은 b트랙도 참가 가능
+              </div>
             </div>
           </div>
           <div style={{ margin: '30px 16px 14px 0', lineHeight: '24px' }}>
             <div>학생 | 10,000원</div>
-            <div>학생 | 10,000원</div>
+            <div>일반 | 20,000원</div>
           </div>
         </div>
         <div
@@ -81,7 +82,7 @@ const Track = ({
                 margin: '46px 16px 15px 0 ',
               }}
             >
-              100명
+              {trackInfo.application}
             </div>
           </div>
           <div
@@ -106,7 +107,7 @@ const Track = ({
                 margin: '46px 16px 15px 0 ',
               }}
             >
-              코엑스 아트 홀
+              {trackInfo.location}
             </div>
           </div>
         </div>
@@ -168,6 +169,8 @@ const Track = ({
             end={info.end}
             title={info.title}
             name={info.name}
+            description={info.description}
+            image={info.image}
             infos={info.infos}
           />
         );
@@ -179,6 +182,6 @@ const Track = ({
 Track.propTypes = {
   title: PropTypes.string.isRequired,
   schedule: PropTypes.array.isRequired,
-  // trackInfo: PropTypes.array.isRequired,
+  trackInfo: PropTypes.object.isRequired,
 };
 export default Track;

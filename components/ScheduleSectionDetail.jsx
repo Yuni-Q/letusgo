@@ -5,23 +5,22 @@ import styled from 'styled-components';
 import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
 
 const StyledScheduleSectionDetail = styled.div`
-  height: 430px;
   animation-name: slide-up;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   // animation-iteration-count: infinite;
-  overflow: hidden;
+  overflow: scroll;
   @keyframes slide-up {
     0% {
       height: 0px;
     }
     100% {
-      height: 430px;
+      height: 250px;
     }
   }
 `;
 
-const ScheduleSectionDetail = ({ show, infos }) => {
+const ScheduleSectionDetail = ({ show, infos, image, description }) => {
   return (
     !!show && (
       <StyledScheduleSectionDetail
@@ -37,18 +36,19 @@ const ScheduleSectionDetail = ({ show, infos }) => {
             padding: '0 0 16px 0',
           }}
         >
-          <div
+          <img
+            src={image}
+            alt=""
             style={{
               width: '100vw',
               maxwidth: '100vw',
               maxWidth: '151px',
               height: '151px',
-              background: 'gray',
               padding: '0 0 16px 0',
             }}
           />
         </div>
-        <div style={{ padding: '0 0 16px 0' }}>설명</div>
+        <div style={{ padding: '0 0 16px 0' }}>{description}</div>
         {infos.map((info, idx) => {
           return (
             <ScheduleSectionDetailInfo
@@ -58,19 +58,6 @@ const ScheduleSectionDetail = ({ show, infos }) => {
             />
           );
         })}
-
-        <div style={{ display: 'flex' }}>
-          <div style={{ width: '68px', padding: '0 0 3px 0' }}>email</div>
-          <div>abc@naver.com</div>
-        </div>
-        <div style={{ display: 'flex' }}>
-          <div style={{ width: '68px', padding: '0 0 3px 0' }}>email</div>
-          <div>abc@naver.com</div>
-        </div>
-        <div style={{ display: 'flex' }}>
-          <div style={{ width: '68px', padding: '0 0 3px 0' }}>email</div>
-          <div>abc@naver.com</div>
-        </div>
       </StyledScheduleSectionDetail>
     )
   );
@@ -79,6 +66,8 @@ const ScheduleSectionDetail = ({ show, infos }) => {
 ScheduleSectionDetail.propTypes = {
   show: PropTypes.bool.isRequired,
   infos: PropTypes.array.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default ScheduleSectionDetail;
