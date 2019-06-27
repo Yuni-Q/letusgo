@@ -1,11 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
+
+const StyledScheduleSectionDetail = styled.div`
+  height: 430px;
+  animation-name: slide-up;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+  overflow: hidden;
+  @keyframes slide-up {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 430px;
+    }
+  }
+`;
 
 const ScheduleSectionDetail = ({ show, infos }) => {
   return (
     !!show && (
-      <div
+      <StyledScheduleSectionDetail
         style={{
           padding: '15px 0 0 16px',
           borderTop: '1px solid',
@@ -52,7 +71,7 @@ const ScheduleSectionDetail = ({ show, infos }) => {
           <div style={{ width: '68px', padding: '0 0 3px 0' }}>email</div>
           <div>abc@naver.com</div>
         </div>
-      </div>
+      </StyledScheduleSectionDetail>
     )
   );
 };
