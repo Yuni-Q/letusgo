@@ -94,6 +94,7 @@ const Footer = () => {
                 fontSize: '24px',
                 margin: '0 0 24px 0',
                 fontWeight: 'bold',
+                padding: '0 10px',
               }}
             >
               서울특별시 서대문구 연희로2길 62 한빛미디어

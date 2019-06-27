@@ -17,29 +17,87 @@ const StyledLayout = styled.div`
   }
 `;
 
+const StyledIndex = styled.div`
+  max-width: 960px;
+  width: 100vw;
+`;
+
 const Index = () => {
   return (
-    <div
-      style={{
-        maxWidth: '960px',
-        width: '100vw',
-      }}
-    >
+    <StyledIndex>
+      <img
+        style={{
+          width: '100vw',
+          height: '39.37vw',
+          minHeight: '180px',
+          position: 'absolute',
+          top: '62px',
+          left: '0px',
+          zIndex: -1,
+        }}
+        src="/static/background.jpg"
+        alt=""
+      />
       <Menu />
       <div
         style={{
           margin: '90px 0 20px 10px',
           fontSize: '24px',
           fontWeight: 'bold',
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
-        [2018 Summer]
+        <img
+          style={{ width: '130px', height: '130px', margin: '0 32px 0 0' }}
+          src="/static/icon_app_web.svg"
+          alt=""
+        />
+        <div
+          style={{ color: color.white, fontSize: '35px', lineHeight: '45px' }}
+        >
+          let us: GO!
+          <br />
+          iOS Developers Korea
+          <br />
+          [2019 Summer]
+          <br />
+        </div>
       </div>
-      <img
-        style={{ width: '100vw', maxWidth: '960px' }}
-        src="/static/letusgo.png"
-        alt=""
-      />
+      <div
+        style={{
+          backgroundColor: color.white,
+          padding: '48px',
+          fontSize: '20px',
+          lineHeight: '29px',
+          margin: '0 0 82px 0',
+        }}
+      >
+        <br />
+        let us: Go!에 관심을 가져주셔서 감사드립니다.
+        <br />
+        let us: Go!(前 비정상 토크모임)는 2016년 10월에 처음, 세미나를 열게
+        되었습니다.
+        <br />
+        세미나라고 하기보단, 서로 가지고 있는 지식을 공유하며 소통하고
+        <br />
+        같은 개발자끼리 어울려 친해질 수 있는 편한 자리로 생각해주시면
+        좋겠습니다.
+        <br />
+        <br />
+        let us: Go! 참가신청은 아무 조건이 없습니다
+        <br />
+        iOS 개발자로 현업에서 일하시는 분, 이제 막 시작해서 헤매는 분,
+        <br />
+        그리고 이제 iOS 개발을 시작하려 하시는 분 모두가 모여 개발 이야기를
+        꽃피우는 자리입니다.
+        <br />
+        알고 있는 정보는 서로에게 공유하고, 모르는 정보는 얻어가는 서로 소통하는
+        자리이니 부담 없이 와주세요.
+        <br />
+        의미있고 예쁜 기념품과 경품도 증정합니다 :)
+        <br />
+      </div>
       <StyledLayout>
         <Track
           title={'Track A'}
@@ -277,6 +335,7 @@ const Index = () => {
           alignItems: 'center',
           backgroundColor: color.black,
           borderRadius: '20px',
+          margin: '0 0 84px 0',
         }}
       >
         <div
@@ -290,12 +349,42 @@ const Index = () => {
           신청하기
         </div>
       </div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '100vw',
+          maxWidth: '960px',
+          margin: '0 0 84px 0',
+          backgroundColor: color.white,
+        }}
+      >
+        <div style={{ margin: '28px 0 24px 0', fontSize: '24px' }}>
+          추가 스폰서 모집중
+        </div>
+        <div
+          style={{
+            margin: '0 0 24px 0',
+            fontSize: '23px',
+            color: color.electricBlue,
+          }}
+        >
+          keywindow@naver.com
+        </div>
+        <div
+          style={{ margin: '0 0 34px 0', fontSize: '20px', padding: '0 10px' }}
+        >
+          간식, 상품, 회식 제공! 뭐든 좋습니다! 언제나 열려있습니다! 메일
+          주세요!
+        </div>
+      </div>
       <img
         style={{ maxWidth: '960px', width: '100vw' }}
         src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg"
         alt=""
       />
-    </div>
+    </StyledIndex>
   );
 };
 

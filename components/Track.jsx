@@ -1,14 +1,22 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import ScheduleSession from './ScheduleSection';
 import { color } from '../common/color';
 // import TrackInfo from './TrackInfo';
+const StyledTrack = styled.div`
+  width: 100vw;
+  margin: 0 10px;
+  maxwidth: 460px;
+  @media (max-width: 950px) {
+    margin: 0;
+  }
+`;
 
 const Track = ({ title, schedule, trackInfo }) => {
   return (
-    <div style={{ width: '100vw', margin: '0 10px', maxWidth: '460px' }}>
+    <StyledTrack>
       <div
         style={{
           display: 'flex',
@@ -139,6 +147,7 @@ const Track = ({ title, schedule, trackInfo }) => {
           fontWeight: 'bold',
           margin: '0 0 20px 0',
           color: color.electricBlue,
+          padding: '0 10px',
         }}
       >
         Schedule
@@ -175,7 +184,7 @@ const Track = ({ title, schedule, trackInfo }) => {
           />
         );
       })}
-    </div>
+    </StyledTrack>
   );
 };
 

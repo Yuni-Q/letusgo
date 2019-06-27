@@ -1,6 +1,7 @@
 import { Container } from 'next/app';
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import withRedux from 'next-redux-wrapper';
 import { applyMiddleware, compose, createStore } from 'redux';
@@ -12,6 +13,8 @@ import Helmet from 'react-helmet';
 import reducer from '../reducers';
 import rootSaga from '../sagas';
 import Footer from '../components/Footer';
+
+const StyledMyApp = styled.div``;
 
 const MyApp = ({ Component, store, pageProps }) => (
   <Container>
@@ -62,16 +65,18 @@ const MyApp = ({ Component, store, pageProps }) => (
           },
         ]}
       />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          position: 'relative',
-        }}
-      >
-        <Component {...pageProps} />
-      </div>
-      <Footer />
+      <StyledMyApp>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'relative',
+          }}
+        >
+          <Component {...pageProps} />
+        </div>
+        <Footer />
+      </StyledMyApp>
     </Provider>
   </Container>
 );
