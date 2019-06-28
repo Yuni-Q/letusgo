@@ -13,8 +13,10 @@ import Helmet from 'react-helmet';
 import reducer from '../reducers';
 import rootSaga from '../sagas';
 import Footer from '../components/Footer';
+import firebase from '../common/firebase';
 
 const StyledMyApp = styled.div``;
+console.log(firebase);
 
 const MyApp = ({ Component, store, pageProps }) => (
   <Container>
