@@ -97,7 +97,15 @@ const Footer = () => {
                 padding: '0 10px',
               }}
             >
-              서울특별시 서대문구 연희로2길 62 한빛미디어
+              <img
+                onClick={() => {
+                  window.location.href =
+                    'https://map.naver.com/?mapmode=0&pinId=12120302&pinType=site&lng=ebf219704585925ad36e69fc6be47c93&lat=8d244babc760a0e4c1e0d5fe8b0fb7ca&dlevel=11&enc=b64';
+                }}
+                style={{ maxWidth: '960px', width: '80vw' }}
+                src="/static/map.png"
+                alt=""
+              />
             </div>
             <div
               style={{
@@ -116,7 +124,7 @@ const Footer = () => {
                   style={{
                     margin: '0 20px 5px 0',
                     fontWeight: 'bold',
-                    color: color.electricBlue,
+                    color: color.grapefruit,
                   }}
                 >
                   장소
@@ -132,7 +140,7 @@ const Footer = () => {
                     style={{
                       margin: '0 20px 5px 0',
                       fontWeight: 'bold',
-                      color: color.electricBlue,
+                      color: color.grapefruit,
                     }}
                   >
                     연락처
@@ -157,7 +165,7 @@ const Footer = () => {
         }}
       >
         <StyledFooter>
-          <img src="/static/logo_let us: Go!.svg" alt="" />
+          <img src="/static/logo2.svg" alt="" />
           <div>© iOS Developers Korea</div>
           <div style={{ display: 'flex' }}>
             <img

@@ -13,10 +13,10 @@ import Helmet from 'react-helmet';
 import reducer from '../reducers';
 import rootSaga from '../sagas';
 import Footer from '../components/Footer';
-import firebase from '../common/firebase';
+// import firebase from '../common/firebase';
 
 const StyledMyApp = styled.div``;
-console.log(firebase);
+// console.log(firebase);
 
 const MyApp = ({ Component, store, pageProps }) => (
   <Container>
@@ -73,6 +73,8 @@ const MyApp = ({ Component, store, pageProps }) => (
             display: 'flex',
             justifyContent: 'center',
             position: 'relative',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         >
           <Component {...pageProps} />

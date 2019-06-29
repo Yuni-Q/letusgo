@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import { color } from '../common/color';
 import ScheduleSectionDetail from './ScheduleSectionDetail';
+
+const StyledScheduleSession = styled.div`
+  padding: 20px 0;
+  margin: 8px 0;
+  background-color: ${color.littleWhite};
+  @media (max-width: 950px) {
+    margin: 8px 16px;
+  }
+`;
 
 const ScheduleSession = ({
   start,
@@ -15,15 +25,7 @@ const ScheduleSession = ({
 }) => {
   const [track, setTrack] = useState(false);
   return (
-    <div
-      onClick={() => setTrack(!track)}
-      style={{
-        // borderBottom: '1px solid',
-        padding: '20px 0',
-        margin: '8px 12px',
-        backgroundColor: color.white,
-      }}
-    >
+    <StyledScheduleSession onClick={() => setTrack(!track)}>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ display: 'flex' }}>
           <div
@@ -32,8 +34,8 @@ const ScheduleSession = ({
               lineHeight: '22px',
             }}
           >
-            <div style={{ color: color.electricBlue }}>{start}</div>
-            <div style={{ color: color.electricBlue }}>{end}</div>
+            <div style={{ color: color.grapefruit }}>{start}</div>
+            <div style={{ color: color.grapefruit }}>{end}</div>
           </div>
           <div
             style={{
@@ -48,7 +50,7 @@ const ScheduleSession = ({
         </div>
         <div
           style={{
-            margin: '0 10px 0 0',
+            margin: '0 24px 0 0',
             display: 'flex',
             alignItems: 'center',
           }}
@@ -66,7 +68,7 @@ const ScheduleSession = ({
         image={image}
         description={description}
       />
-    </div>
+    </StyledScheduleSession>
   );
 };
 

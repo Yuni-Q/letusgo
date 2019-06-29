@@ -12,12 +12,10 @@ const TrackInfo = ({ title, description }) => {
         margin: '18px 8px',
         // borderBottom: '1px solid',
         padding: '14px 12px',
-        backgroundColor: color.white,
+        backgroundColor: color.littleWhite,
       }}
     >
-      <div style={{ fontWeight: 'bold', color: color.electricBlue }}>
-        {title}
-      </div>
+      <div style={{ fontWeight: 'bold', color: color.grapefruit }}>{title}</div>
       <div>{description}</div>
     </div>
   );

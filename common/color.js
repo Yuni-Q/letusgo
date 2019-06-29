@@ -3,8 +3,10 @@ export const color = {
   black: '#181818',
   brownGrey: '#a0a0a0',
   warmwhite: '#fafafa',
-  white: '#ffffff',
+  littleWhite: '#f9f9f9',
   warmGrey: '#a0a0a0',
+  grapefruit: '#f96357',
+  veryLightPink: '#f0f0f0',
 };
 
 export default color;

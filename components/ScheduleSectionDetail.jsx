@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
+import { color } from '../common/color';
 
 const StyledScheduleSectionDetail = styled.div`
   animation-name: slide-up;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-  // animation-iteration-count: infinite;
   overflow: scroll;
   @keyframes slide-up {
-    0% {
+    from {
       height: 0px;
     }
-    100% {
+    to {
       height: 250px;
     }
   }
@@ -26,8 +26,8 @@ const ScheduleSectionDetail = ({ show, infos, image, description }) => {
       <StyledScheduleSectionDetail
         style={{
           padding: '15px 0 0 16px',
-          borderTop: '1px solid',
-          margin: '24px 0 0 96px',
+          borderTop: `1px solid ${color.veryLightPink}`,
+          margin: '24px 16px 0 80px',
           maxwidth: '100vw',
         }}
       >
@@ -48,7 +48,9 @@ const ScheduleSectionDetail = ({ show, infos, image, description }) => {
             }}
           />
         </div>
-        <div style={{ padding: '0 0 16px 0' }}>{description}</div>
+        <div style={{ padding: '0 0 16px 0', lineHeight: '22px' }}>
+          {description}
+        </div>
         {infos.map((info, idx) => {
           return (
             <ScheduleSectionDetailInfo
