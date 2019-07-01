@@ -87,12 +87,9 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
           >
             <div>참가비</div>
             <div>
-              <div style={{ fontSize: '13px', color: color.warmGrey }}>
-                (장소 대여 및 간단한 다과)
-              </div>
-              <div style={{ fontSize: '13px', color: color.warmGrey }}>
-                * a트랙은 b트랙도 참가 가능
-              </div>
+              <pre style={{ fontSize: '13px', color: color.warmGrey }}>
+                {trackInfo.description}
+              </pre>
             </div>
           </div>
           <div style={{ margin: '44px 16px 14px 0', lineHeight: '24px' }}>

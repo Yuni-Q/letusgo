@@ -219,6 +219,8 @@ const Index = () => {
               },
             ]}
             trackInfo={{
+              description:
+                '강의로만 이루어진 트랙입니다.\nB트랙 참여가 불가능합니다.',
               location: '한빛빌딩 b동 1층\n리더스홀',
               application: '75명',
             }}
@@ -319,6 +321,8 @@ const Index = () => {
               // },
             ]}
             trackInfo={{
+              description:
+                '실습으로 진행되는 트랙입니다.\n맥북을 지참하셔야 합니다.\nA트랙 참여도 가능합니다.',
               location: '한빛빌딩 a동 2층\n강의실 40',
               application: '35명',
             }}
