@@ -1,86 +1,178 @@
 import React from 'react';
+import styled from 'styled-components';
+import { color } from '../common/color';
 
 import { useInput } from '../common/useInput';
 import { Link } from '../routes';
+import Menu from '../components/Menu';
+import { StyledButton } from '../common/styledComponents';
 
-const Login = () => {
-  const [id, setId] = useInput('');
+const StyledInputDiv = styled.div`
+  width: 100vw;
+  height: 60px;
+  max-width: 960px;
+  border: solid 1px #dcdcdc;
+  border-radius: 30px;
+`;
+
+const StyledInput = styled.input`
+  margin: 0 0 0 36px;
+  height: 58px;
+  max-width: 960px;
+  border: none;
+  background-color: #ffffff;
+`;
+
+const Signin = () => {
+  const [email, setEmail] = useInput('');
+  const [confirmEmail, setConfirmEmail] = useInput('');
   const [password, setPassword] = useInput('');
-
-  const menuHeight = 16;
+  const [confirmPassword, setconfirmPassword] = useInput('');
+  const [phoneNumber, setPhoneNumber] = useInput('');
+  const [nickName, setNickName] = useInput('');
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(id, password);
+    console.log(email, password);
   };
 
   return (
     <div
       style={{
+        maxWidth: '960px',
         width: '100vw',
-        height: '100vh',
-        // display: 'flex',
-        // justifyContent: 'space-around',
-        // alignItems: 'center',
-        // flexDirection: 'column',
       }}
     >
+      <Menu />
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          height: `${menuHeight}`,
+          margin: '60px 0 0 0',
         }}
       >
-        <div>
-          <Link route="/" href="/">
-            now
-          </Link>
+        <div
+          style={{ margin: '21px 0 0 0', fontSize: '14px', fontWeight: 600 }}
+        >
+          Welcome to Let us go
         </div>
-        <div>
-          <Link route="/session" href="/session">
-            session
-          </Link>
+        <div
+          style={{
+            fontSize: '32px',
+            fontWeight: 'bold',
+            margin: '0 0 114px 0',
+          }}
+        >
+          Sign up
         </div>
-        <div>
-          <Link route="/my" href="/my">
-            my
-          </Link>
-        </div>
-      </div>
-      <div
-        style={{
-          height: `calc(100vh - ${menuHeight}px)`,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <div>Signin</div>
-        <div>가입</div>
         <form onSubmit={onSubmit}>
-          <div>
-            <input type="text" placeholder="id" value={id} onChange={setId} />
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="email">메일</label>
           </div>
-          <div>
-            <input
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
+              type="email"
+              id="email"
+              placeholder="이메일을 입력하세요."
+              value={email}
+              onChange={setEmail}
+            />
+          </StyledInputDiv>
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="confirmEmail">메일 인증번호</label>
+          </div>
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
+              type="text"
+              id="confirmEmail"
+              placeholder="이메일을 입력하세요."
+              value={confirmEmail}
+              onChange={setConfirmEmail}
+            />
+          </StyledInputDiv>
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="password">비밀번호</label>
+          </div>
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
               type="password"
-              placeholder="password"
+              id="password"
+              placeholder="비밀번호를 입력하세요."
               value={password}
               onChange={setPassword}
             />
+          </StyledInputDiv>
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="confirmPassword">비밀번호</label>
+          </div>
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
+              type="text"
+              id="confirmPassword"
+              placeholder="이메일을 입력하세요."
+              value={confirmPassword}
+              onChange={setconfirmPassword}
+            />
+          </StyledInputDiv>
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="phoneNumber">전화번호</label>
+          </div>
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
+              type="number"
+              id="phoneNumber"
+              placeholder="이메일을 입력하세요."
+              value={phoneNumber}
+              onChange={setPhoneNumber}
+            />
+          </StyledInputDiv>
+          <div style={{ margin: '0 0 8px 12px' }}>
+            <label htmlFor="nickName">닉네임</label>
+          </div>
+          <StyledInputDiv style={{ margin: '0 0 28px' }}>
+            <StyledInput
+              type="text"
+              id="nickName"
+              placeholder="이메일을 입력하세요."
+              value={nickName}
+              onChange={setNickName}
+            />
+          </StyledInputDiv>
+          <div>
+            <StyledButton
+              style={{ width: '100vw', maxWidth: '960px' }}
+              type="submit"
+              className="btn btn-primary"
+            >
+              <div
+                style={{
+                  // border: `0px solid ${color.black}`,
+                  fontSize: '20px',
+                  color: 'white',
+                  backgroundColor: color.black,
+                }}
+              >
+                로그인하기
+              </div>
+            </StyledButton>
           </div>
           <div>
-            <button type="submit" className="btn btn-primary">
-              회원가입
-            </button>
+            <div
+              style={{
+                width: '100vw',
+                maxWidth: '960px',
+                display: 'flex',
+                justifyContent: 'center',
+                margin: '36px 0 355px 0',
+              }}
+            >
+              <Link route="signin" href="signin">
+                회원가입하기
+              </Link>
+            </div>
           </div>
-          <div />
         </form>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Signin;
