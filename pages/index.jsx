@@ -241,7 +241,7 @@ const Index = () => {
                 end: '15:00',
                 title: '빨간맛  SwiftUI',
                 name: 'keyWindow',
-                image: '/static/yagom.png',
+                image: '/static/keywindow.png',
                 description:
                   'SwiftUI를 활용하여 여러 화면을 구현해보면서 느껴보기',
                 infos: [],

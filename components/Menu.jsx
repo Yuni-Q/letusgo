@@ -26,7 +26,7 @@ const Menu = () => {
         >
           <img
             style={{ maxWidth: '372px', width: '80vw', maxHeight: '62px' }}
-            src="/static/logo.png"
+            src="/static/let-us-go.svg"
             alt=""
           />
         </div>
