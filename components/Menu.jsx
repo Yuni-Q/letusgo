@@ -25,7 +25,7 @@ const Menu = () => {
           }}
         >
           <img
-            style={{ maxWidth: '372px', width: '80vw', maxHeight: '62px' }}
+            style={{ maxWidth: '330px', width: '80vw', maxHeight: '62px' }}
             src="/static/let-us-go.svg"
             alt=""
           />
