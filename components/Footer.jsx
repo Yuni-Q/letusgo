@@ -89,35 +89,6 @@ const Footer = () => {
             >
               Location
             </div>
-            <div
-              style={{
-                fontSize: '24px',
-                margin: '0 0 24px 0',
-                fontWeight: 'bold',
-                padding: '0 10px',
-              }}
-            >
-              <img
-                onClick={() => {
-                  window.location.href =
-                    'https://map.naver.com/?mapmode=0&pinId=12120302&pinType=site&lng=ebf219704585925ad36e69fc6be47c93&lat=8d244babc760a0e4c1e0d5fe8b0fb7ca&dlevel=11&enc=b64';
-                }}
-                style={{ maxWidth: '960px', width: '80vw' }}
-                src="/static/map.png"
-                alt=""
-              />
-            </div>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                margin: '0 0 51px 0',
-              }}
-            >
-              <div />
-              <div />
-            </div>
             <StyledFooterInfo>
               <StyledFooterLocation>
                 <div
@@ -151,6 +122,35 @@ const Footer = () => {
                 </StyledFooterPhone>
               </div>
             </StyledFooterInfo>
+            <div
+              style={{
+                fontSize: '24px',
+                margin: '0 0 24px 0',
+                fontWeight: 'bold',
+                padding: '0 10px',
+              }}
+            >
+              <img
+                onClick={() => {
+                  window.location.href =
+                    'https://map.naver.com/?mapmode=0&pinId=12120302&pinType=site&lng=ebf219704585925ad36e69fc6be47c93&lat=8d244babc760a0e4c1e0d5fe8b0fb7ca&dlevel=11&enc=b64';
+                }}
+                style={{ maxWidth: '960px', width: '80vw' }}
+                src="/static/map.png"
+                alt=""
+              />
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                margin: '0 0 51px 0',
+              }}
+            >
+              <div />
+              <div />
+            </div>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@ const Footer = () => {
         }}
       >
         <StyledFooter>
-          <img src="/static/logo2.svg" alt="" />
+          <img src="/static/logo-let-us-go.svg" alt="" />
           <div>© iOS Developers Korea</div>
           <div style={{ display: 'flex' }}>
             <img

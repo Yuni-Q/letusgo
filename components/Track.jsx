@@ -28,9 +28,11 @@ const StyledSchedule = styled.div`
 const StyledTrackInfo1 = styled.div`
   background-color: ${color.littleWhite};
   display: flex;
+  max-height: 113px;
   justify-content: space-between;
   @media (max-width: 950px) {
     margin: 0 16px;
+    max-height: none;
   }
 `;
 
@@ -87,7 +89,12 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
           >
             <div>참가비</div>
             <div>
-              <pre style={{ fontSize: '13px', color: color.warmGrey }}>
+              <pre
+                style={{
+                  fontSize: '13px',
+                  color: color.warmGrey,
+                }}
+              >
                 {trackInfo.description}
               </pre>
             </div>
@@ -154,7 +161,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
           padding: '0 0 12px 24px',
         }}
       >
-        <div>05.03</div>
+        <div>08.03</div>
         <div
           style={{
             width: '88px',

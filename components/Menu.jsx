@@ -12,20 +12,20 @@ const Menu = () => {
         right: 0,
         width: '100vw',
         backgroundColor: color.warmwhite,
-        maxHeight: '62px',
+        height: '60px',
+        alignItems: 'center',
       }}
     >
       <div style={{ maxWidth: '960px', width: '100vw' }}>
         <div
           style={{
-            // margin: '18px 0',
             fontSize: '20px',
             fontWeight: 'bold',
             backgroundColor: color.warmwhite,
           }}
         >
           <img
-            style={{ maxWidth: '330px', width: '80vw', maxHeight: '62px' }}
+            style={{ maxWidth: '94px', width: '80vw' }}
             src="/static/let-us-go.svg"
             alt=""
           />
