@@ -2,6 +2,13 @@
 const webpack = require('webpack');
 
 module.exports = {
+  exportPathMap() {
+    return {
+      '/': { page: '/' },
+      signin: { page: '/signin' },
+      my: { page: '/my' },
+    };
+  },
   distDir: 'build',
   analyzeServer: ['server', 'both'].includes(process.env.BUNDLE_ANALYZE),
   analyzeBrowser: ['browser', 'both'].includes(process.env.BUNDLE_ANALYZE),
