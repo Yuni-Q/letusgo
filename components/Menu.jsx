@@ -13,7 +13,7 @@ const StyledLogo = styled.img`
 `;
 
 const StyledNavigation = styled.div`
-  display: flex;
+  display: none;
   @media (max-width: 950px) {
     display: none;
   }

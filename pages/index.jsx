@@ -6,6 +6,36 @@ import Track from '../components/Track';
 import { StyledButton } from '../common/styledComponents';
 import { color } from '../common/color';
 
+const StyledSponserProductSerport = styled.div`
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0;
+    img {
+      margin: 4px 0 !important;
+    }
+  }
+`;
+
+const StyledSponserSection = styled.div`
+  background-color: ${color.warmwhite};
+  width: 100vw;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 0 8px 0;
+`;
+
+const StyledSponserTier = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 24px;
+`;
+
 const StyledFooterInfo = styled.div`
   display: flex;
   justifycontent: center;
@@ -21,13 +51,14 @@ const StyledFooterLocation = styled.div`
   margin: 0 88px 0 0;
   @media (max-width: 950px) {
     display: block;
-    margin: 0 0 20px 0;
+    margin: 0 16px 20px 16px;
   }
 `;
 const StyledFooterPhone = styled.div`
   display: flex;
   @media (max-width: 950px) {
     display: block;
+    margin: 0 16px;
   }
 `;
 
@@ -84,6 +115,7 @@ const Index = () => {
               color: color.littleWhite,
               fontSize: '35px',
               lineHeight: '45px',
+              margin: '0 16px 0 0',
             }}
           >
             let us: GO!
@@ -134,6 +166,15 @@ const Index = () => {
             title={'Track A'}
             schedule={[
               {
+                start: '13:00',
+                end: '13:20',
+                title: '개회식',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '13:20',
                 end: '13:40',
                 title: 'StringInterpolation과 SwiftUI',
@@ -164,6 +205,15 @@ const Index = () => {
                 ],
               },
               {
+                start: '14:00',
+                end: '14:10',
+                title: '쉬는시간',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '14:10',
                 end: '14:40',
                 title: 'ARKit 3 톺아보기',
@@ -190,6 +240,15 @@ const Index = () => {
                 infos: [],
               },
               {
+                start: '15:00',
+                end: '15:40',
+                title: '네트워킹',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '15:40',
                 end: '16:10',
                 title: 'Combine vs Rx',
@@ -208,6 +267,15 @@ const Index = () => {
                 infos: [],
               },
               {
+                start: '16:00',
+                end: '16:40',
+                title: '쉬는시간',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '16:50',
                 end: '17:10',
                 title: `What's new in Xcode / iOS13`,
@@ -218,6 +286,15 @@ const Index = () => {
                 infos: [],
               },
               {
+                start: '17:00',
+                end: '17:10',
+                title: '쉬는시간',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '17:20',
                 end: '17:50',
                 title: 'WWDC Cheatsheet',
@@ -225,6 +302,15 @@ const Index = () => {
                 image: '/static/profile_wanbok.jpeg',
                 description:
                   'WWDC주요 세션 내용 간략히 소개하고, wwdc참가시 잘 즐기는 꿀 팁 소개',
+                infos: [],
+              },
+              {
+                start: '17:50',
+                end: '18:00',
+                title: '경품추첨 및 폐회식 / 사진촬영',
+                name: '',
+                image: '',
+                description: '',
                 infos: [],
               },
             ]}
@@ -240,12 +326,31 @@ const Index = () => {
             title={'Track A + B'}
             schedule={[
               {
+                start: '13:00',
+                end: '13:20',
+                title: '개회식',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '13:20',
                 end: '14:00',
                 title: '누구나 할 수 있다. Networking',
                 name: '카우',
                 image: '/static/profile_kawoou.jpeg',
                 description: 'Rest부터 Moya까지!',
+                infos: [],
+                scale: 2,
+              },
+              {
+                start: '14:00',
+                end: '14:10',
+                title: '쉬는시간',
+                name: '',
+                image: '',
+                description: '',
                 infos: [],
               },
               {
@@ -257,16 +362,17 @@ const Index = () => {
                 description:
                   'SwiftUI를 활용하여 여러 화면을 구현해보면서 느껴보기',
                 infos: [],
+                scale: 2,
               },
-              // {
-              //   start: '15:00',
-              //   end: '15:40',
-              //   title: '네트워킹',
-              //   name: '',
-              //   image: '',
-              //   description: '',
-              //   infos: [],
-              // },
+              {
+                start: '15:00',
+                end: '15:40',
+                title: '네트워킹',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
               {
                 start: '15:40',
                 end: '16:30',
@@ -274,11 +380,8 @@ const Index = () => {
                 name: '구범모',
                 image: '/static/ku.jpeg',
                 description: 'Jump into iPadOS13',
+                scale: 2,
                 infos: [
-                  // 홈피 [gbmksquare.com](http://gbmksquare.com/)
-                  // 깃헙 gbmksquare
-                  // 인스타 @gbmksquare
-                  // 페북 [fb.com/gbmksquare](http://fb.com/gbmksquare)
                   {
                     title: '메일',
                     description: 'ksquareatm@gmail.com',
@@ -302,6 +405,15 @@ const Index = () => {
                 ],
               },
               {
+                start: '16:30',
+                end: '16:40',
+                title: '쉬는시간',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
+              {
                 start: '16:40',
                 end: '17:10',
                 title: 'RxSwift Internal',
@@ -318,17 +430,18 @@ const Index = () => {
                 image: '/static/bot.png',
                 description:
                   '뷰컨트롤러와 뷰의 생명주기에 대해 좀 더 자세히 살펴보기',
+                scale: 2,
                 infos: [{ title: '이메일', description: 'giftbott@gmail.com' }],
               },
-              // {
-              //   start: '17:50',
-              //   end: '18:00',
-              //   title: '경품추첨 및 폐회식 / 사진촬영',
-              //   name: '',
-              //   image: '',
-              //   description: '',
-              //   infos: [],
-              // },
+              {
+                start: '17:50',
+                end: '18:00',
+                title: '경품추첨 및 폐회식 / 사진촬영',
+                name: '',
+                image: '',
+                description: '',
+                infos: [],
+              },
             ]}
             trackInfo={{
               description:
@@ -365,11 +478,86 @@ const Index = () => {
       >
         <div style={{ margin: '28px 0 24px 0', fontSize: '24px' }}>Sponser</div>
       </div>
-      <img
-        style={{ width: '100vw', margin: '0 0 80px 0' }}
-        src="/static/sponser.png"
-        alt=""
-      />
+      <StyledSponserSection>
+        <StyledSponserTier>골드</StyledSponserTier>
+        <div>
+          <img
+            src="/static/sponser_gold_hey dealer.svg"
+            width="151px"
+            style={{ margin: '28px 0' }}
+            alt=""
+          />
+        </div>
+      </StyledSponserSection>
+      <StyledSponserSection>
+        <StyledSponserTier>실버</StyledSponserTier>
+        <div>
+          <div>
+            <img
+              src="/static/sponser_silver_myrealtrip.svg"
+              width="200px"
+              style={{ margin: '28px 0 8px 0' }}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="/static/hanbit-logo-940px-1.svg"
+              width="200px"
+              style={{ margin: '0 0 28px 0' }}
+              alt=""
+            />
+          </div>
+        </div>
+      </StyledSponserSection>
+      <StyledSponserSection>
+        <StyledSponserTier>브론즈</StyledSponserTier>
+        <img
+          src="/static/sponser_bronze.svg"
+          width="90px"
+          style={{ margin: '28px 0' }}
+          alt=""
+        />
+      </StyledSponserSection>
+      <StyledSponserSection>
+        <StyledSponserTier>물품 지원</StyledSponserTier>
+        <StyledSponserProductSerport>
+          <img
+            src="/static/sponser_support_yagom.svg"
+            width="52px"
+            style={{ margin: '28px 65px 28px 0' }}
+            alt=""
+          />
+          <img
+            src="/static/sponser_support_line.svg"
+            width="126px"
+            style={{ margin: '28px 0' }}
+            alt=""
+          />
+        </StyledSponserProductSerport>
+      </StyledSponserSection>
+      <StyledSponserSection>
+        <StyledSponserTier>주관</StyledSponserTier>
+        <img
+          src="/static/sponser_support_yagom.svg"
+          width="52px"
+          style={{ margin: '28px 0' }}
+          alt=""
+        />
+      </StyledSponserSection>
+      <StyledSponserSection>
+        <StyledSponserTier>주최</StyledSponserTier>
+        <img
+          src="/static/logo_let us_Go!.svg"
+          style={{
+            margin: '28px 0',
+            maxWidth: '420px',
+            width: '60vw',
+          }}
+          alt=""
+        />
+      </StyledSponserSection>
+
       <div
         style={{
           display: 'flex',
