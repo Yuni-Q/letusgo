@@ -1,27 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import { color } from '../common/color';
-
 import { useInput } from '../common/useInput';
-import { Link } from '../routes';
 import Menu from '../components/Menu';
-import { StyledButton } from '../common/styledComponents';
-
-const StyledInputDiv = styled.div`
-  width: 100vw;
-  height: 60px;
-  max-width: 960px;
-  border: solid 1px #dcdcdc;
-  border-radius: 30px;
-`;
-
-const StyledInput = styled.input`
-  margin: 0 0 0 36px;
-  height: 58px;
-  max-width: 960px;
-  border: none;
-  background-color: #ffffff;
-`;
+import {
+  StyledButton,
+  StyledInputDiv,
+  StyledInput,
+} from '../common/styledComponents';
 
 const Signin = () => {
   const [email, setEmail] = useInput('');
@@ -137,11 +123,7 @@ const Signin = () => {
             />
           </StyledInputDiv>
           <div>
-            <StyledButton
-              style={{ width: '100vw', maxWidth: '960px' }}
-              type="submit"
-              className="btn btn-primary"
-            >
+            <StyledButton type="submit" className="btn btn-primary">
               <div
                 style={{
                   // border: `0px solid ${color.black}`,
@@ -150,24 +132,9 @@ const Signin = () => {
                   backgroundColor: color.black,
                 }}
               >
-                로그인하기
+                가입완료
               </div>
             </StyledButton>
-          </div>
-          <div>
-            <div
-              style={{
-                width: '100vw',
-                maxWidth: '960px',
-                display: 'flex',
-                justifyContent: 'center',
-                margin: '36px 0 355px 0',
-              }}
-            >
-              <Link route="signin" href="signin">
-                회원가입하기
-              </Link>
-            </div>
           </div>
         </form>
       </div>

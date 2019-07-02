@@ -1,27 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
-import { color } from '../common/color';
 
+import { color } from '../common/color';
 import { useInput } from '../common/useInput';
 import { Link } from '../routes';
 import Menu from '../components/Menu';
-import { StyledButton } from '../common/styledComponents';
-
-const StyledInputDiv = styled.div`
-  width: 100vw;
-  height: 60px;
-  max-width: 960px;
-  border: solid 1px #dcdcdc;
-  border-radius: 30px;
-`;
-
-const StyledInput = styled.input`
-  margin: 0 0 0 36px;
-  height: 58px;
-  max-width: 960px;
-  border: none;
-  background-color: #ffffff;
-`;
+import {
+  StyledButton,
+  StyledInputDiv,
+  StyledInput,
+} from '../common/styledComponents';
 
 const Login = () => {
   const [email, setEmail] = useInput('');
@@ -29,7 +16,7 @@ const Login = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(id, password);
+    console.log(email, password);
   };
 
   return (
@@ -85,11 +72,7 @@ const Login = () => {
             />
           </StyledInputDiv>
           <div>
-            <StyledButton
-              style={{ width: '100vw', maxWidth: '960px' }}
-              type="submit"
-              className="btn btn-primary"
-            >
+            <StyledButton type="submit" className="btn btn-primary">
               <div
                 style={{
                   // border: `0px solid ${color.black}`,

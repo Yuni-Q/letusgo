@@ -115,7 +115,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
                 margin: '10px 0 54px 16px',
               }}
             >
-              Application
+              좌석수
             </div>
             <div
               style={{
@@ -131,7 +131,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
                 margin: '10px 0 54px 16px',
               }}
             >
-              Venue
+              장소
             </div>
             <pre
               style={{

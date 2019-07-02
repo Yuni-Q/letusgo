@@ -12,6 +12,13 @@ const StyledLogo = styled.img`
   }
 `;
 
+const StyledNavigation = styled.div`
+  display: flex;
+  @media (max-width: 950px) {
+    display: none;
+  }
+`;
+
 const Menu = () => {
   return (
     <div
@@ -43,18 +50,19 @@ const Menu = () => {
         >
           <StyledLogo src="/static/let-us-go.svg" alt="" />
         </div>
-        <div style={{ display: 'flex' }}>
-          <Link route="/login" href="/login">
-            <div
-              style={{
-                margin: '0 62px 0 0',
-                fontWeight: 'bold',
-                fontSize: '15px',
-              }}
-            >
-              login
-            </div>
-          </Link>
+        <StyledNavigation>
+          {/* <Link route="/login" href="/login"> */}
+          <div
+            onClick={() => alert('준비중입니다.')}
+            style={{
+              margin: '0 62px 0 0',
+              fontWeight: 'bold',
+              fontSize: '15px',
+            }}
+          >
+            login
+          </div>
+          {/* </Link> */}
           <Link route="/" href="/">
             <div
               style={{
@@ -91,7 +99,7 @@ const Menu = () => {
               My
             </div>
           </Link>
-        </div>
+        </StyledNavigation>
       </div>
     </div>
   );
