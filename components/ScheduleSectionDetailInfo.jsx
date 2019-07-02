@@ -9,8 +9,10 @@ const StyledScheduleSectionDetailInfo = styled.div`
 const ScheduleSectionDetailInfo = ({ title, description }) => {
   return (
     <StyledScheduleSectionDetailInfo>
-      <div style={{ width: '68px', padding: '0 0 3px 0' }}>{title}</div>
-      <div>{description}</div>
+      <div style={{ width: '65px', padding: '0 0 3px 0', flexShrink: 0 }}>
+        {title}
+      </div>
+      <div style={{ wordBreak: 'break-all' }}>{description}</div>
     </StyledScheduleSectionDetailInfo>
   );
 };

@@ -6,16 +6,15 @@ import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
 import { color } from '../common/color';
 
 const StyledScheduleSectionDetail = styled.div`
-  animation-name: slide-up;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  overflow: scroll;
-  @keyframes slide-up {
-    from {
-      height: 0px;
+  animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  @keyframes scale-up-top {
+    0% {
+      transform: scale(0);
+      transform-origin: 25% 0%;
     }
-    to {
-      height: 250px;
+    100% {
+      transform: scale(1);
+      transform-origin: 25% 0%;
     }
   }
 `;

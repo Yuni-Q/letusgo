@@ -85,8 +85,10 @@ const Index = () => {
         <img
           style={{
             width: '100vw',
+            minWidth: '960px',
+            minHeight: '300px',
+            objectFit: 'cover',
             height: '39.37vw',
-            minHeight: '180px',
             position: 'absolute',
             top: '62px',
             left: '0px',
@@ -195,13 +197,13 @@ const Index = () => {
                 description:
                   '모두가 꿈꾸는 대박 수익은 아니지만, 지난 2년 동안 꾸준한 앱 수익으로 월세를 낼 수 있었던 소소한 이야기를 공유해볼까 합니다.',
                 infos: [
-                  { title: '📮', description: 'ninevincentg@gmail.com' },
+                  { title: '이메일', description: 'ninevincentg@gmail.com' },
                   {
-                    title: '🐙',
+                    title: '깃헙',
                     description: 'https://github.com/MijeongJeon',
                   },
                   {
-                    title: '👍',
+                    title: '페이스북',
                     description: 'https://www.facebook.com/Ninevincent',
                   },
                 ],
@@ -225,10 +227,13 @@ const Index = () => {
                 description:
                   '이번 WWDC 2019에서 소개된 ARKit 3, RealityKit, Reality Composer에 관해서 이야기하려고 합니다.\niOS 13과 함께 더 강력해진 ARKit 3,\nApple이 AR을 통해 그리는 미래를 만나보아요.',
                 infos: [
-                  { title: 'mail', description: 'clsoft.developer@gmail.com' },
-                  { title: 'github', description: 'https://github.com/clsoft' },
                   {
-                    title: 'facebook',
+                    title: '이메일',
+                    description: 'clsoft.developer@gmail.com',
+                  },
+                  { title: '깃헙', description: 'https://github.com/clsoft' },
+                  {
+                    title: '페이스북',
                     description: 'https://www.facebook.com/clsoft',
                   },
                 ],
@@ -394,11 +399,11 @@ const Index = () => {
                 scale: 2,
                 infos: [
                   {
-                    title: '메일',
+                    title: '이메일',
                     description: 'ksquareatm@gmail.com',
                   },
                   {
-                    title: '홈피',
+                    title: '홈페이지',
                     description: 'gbmksquare.com',
                   },
                   {
