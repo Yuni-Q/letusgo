@@ -260,7 +260,7 @@ const Index = () => {
               {
                 start: '15:40',
                 end: '16:10',
-                title: 'Combine과 RxSwift',
+                title: 'Combine vs RxSwift',
                 name: '상어',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sang.png',
@@ -436,7 +436,7 @@ const Index = () => {
                 name: '엉덩숭아',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/un.png',
-                description: '-',
+                description: 'DisposeBag에 대하여 알아봅시다.',
                 infos: [],
               },
               {
@@ -532,7 +532,7 @@ const Index = () => {
         <StyledSponserTier>브론즈</StyledSponserTier>
         <img
           src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_bronze.svg"
-          width="90px"
+          width="120px"
           style={{ margin: '28px 0' }}
           alt=""
         />
@@ -542,13 +542,13 @@ const Index = () => {
         <StyledSponserProductSerport>
           <img
             src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_yagom.svg"
-            width="52px"
+            width="40px"
             style={{ margin: '28px 65px 28px 0' }}
             alt=""
           />
           <img
             src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_line.svg"
-            width="126px"
+            width="80px"
             style={{ margin: '28px 0' }}
             alt=""
           />
