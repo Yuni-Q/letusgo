@@ -7,6 +7,7 @@ import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
 import { color } from '../common/color';
 
 const StyledScheduleSectionDetail = styled.div`
+  background-color: ${color.littleWhite};
   ${props => {
     if (props.show) {
       return `
