@@ -11,22 +11,23 @@ const StyledScheduleSectionDetail = styled.div`
   ${props => {
     if (props.show) {
       return `
-        animation: scale-up-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         @keyframes scale-up-top {
           0% {
-            transform: scale(0);
-            transform-origin: 25% 0%;
+
+                    transform: scaleY(0.4);
+                    transform-origin: 100% 0%;
           }
           100% {
-            transform: scale(1);
-            transform-origin: 25% 0%;
+                    transform: scaleY(1);
+                    transform-origin: 100% 0%;
           }
         }    
       `;
     }
     return `
-      animation: scale-down-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-      @keyframes scale-down-top {
+    animation: scale-down-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      @keyframes scale-down-ver-top {
         0% {
           transform: scale(1);
           transform-origin: 25% 0%;

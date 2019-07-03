@@ -260,11 +260,11 @@ const Index = () => {
               {
                 start: '15:40',
                 end: '16:10',
-                title: 'Combine vs Rx',
+                title: 'Combine과 RxSwift',
                 name: '상어',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sang.png',
-                description: '-',
+                description: 'Combine과 RxSwift 차이점 알아보기',
                 infos: [],
               },
               {
