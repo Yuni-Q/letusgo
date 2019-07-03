@@ -19,7 +19,11 @@ function AnimatedMount(Component) {
     }
 
     render() {
-      return this.state.shouldRender ? <Component {...this.props} /> : null;
+      return this.state.shouldRender ? (
+        <div style={{ backgroundColor: 'white' }}>
+          <Component {...this.props} />
+        </div>
+      ) : null;
     }
   };
 }

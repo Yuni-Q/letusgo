@@ -94,7 +94,7 @@ const ScheduleSession = ({
         )}
       </div>
       <ScheduleSectionDetail
-        delayTime={500}
+        delayTime={400}
         isMounted={!!track}
         show={!!track}
         infos={infos}

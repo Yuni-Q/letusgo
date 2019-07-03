@@ -12,15 +12,14 @@ const StyledScheduleSectionDetail = styled.div`
     if (props.show) {
       return `
         animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        @keyframes scale-up-top {
+        @keyframes scale-up-ver-top {
           0% {
-
-                    transform: scaleY(0.4);
-                    transform-origin: 100% 0%;
+            transform: scaleY(0);
+          transform-origin: 100% 0%;
           }
           100% {
-                    transform: scaleY(1);
-                    transform-origin: 100% 0%;
+            transform: scaleY(1);
+          transform-origin: 100% 0%;
           }
         }    
       `;
@@ -29,11 +28,11 @@ const StyledScheduleSectionDetail = styled.div`
     animation: scale-down-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
       @keyframes scale-down-ver-top {
         0% {
-          transform: scale(1);
+          transform: scaleY(1);
           transform-origin: 25% 0%;
         }
         100% {
-          transform: scale(0);
+          transform: scaleY(0);
           transform-origin: 25% 0%;
         }
       }    
@@ -46,9 +45,9 @@ const ScheduleSectionDetail = ({ show, infos, image, description }) => {
     <StyledScheduleSectionDetail
       show={show}
       style={{
-        padding: '15px 0 0 16px',
+        padding: '15px 16px 0 96px',
         borderTop: `1px solid ${color.veryLightPink}`,
-        margin: '24px 16px 0 80px',
+        margin: '24px 0 0 0 ',
         maxwidth: '100vw',
       }}
     >
