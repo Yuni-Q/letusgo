@@ -21,7 +21,7 @@ const ScheduleSectionDetail = React.forwardRef(
         style={{
           padding: '15px 16px 0 96px',
           borderTop: show ? `1px solid ${color.veryLightPink}` : 0,
-          margin: show ? '24px 0 0 0 ' : 0,
+          margin: '24px 0 0 0 ',
           maxwidth: '100vw',
         }}
       >

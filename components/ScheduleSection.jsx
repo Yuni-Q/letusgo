@@ -56,11 +56,15 @@ const ScheduleSession = ({
 
     const elementTransition = element.style.transition;
 
+    // eslint-disable-next-line no-param-reassign
     element.style.transition = '';
     requestAnimationFrame(() => {
+      // eslint-disable-next-line no-param-reassign
       element.style.height = `${sectionHeight}px`;
+      // eslint-disable-next-line no-param-reassign
       element.style.transition = elementTransition;
-      requestAnimationFrame(function() {
+      requestAnimationFrame(() => {
+        // eslint-disable-next-line no-param-reassign
         element.style.height = `${0}px`;
       });
     });
@@ -68,22 +72,14 @@ const ScheduleSession = ({
 
   function expandSection(element) {
     const sectionHeight = element.scrollHeight;
-
+    // eslint-disable-next-line no-param-reassign
     element.style.height = `${sectionHeight}px`;
-
-    element.addEventListener('transitionend', () => {
-      element.removeEventListener('transitionend', arguments.callee);
-
-      element.style.height = null;
-    });
   }
   const onClick = () => {
     if (!track && description) {
-      console.log(11, track, ref.current);
       expandSection(ref.current);
       setTrack(!track);
     } else if (description) {
-      console.log(22, track, ref.current);
       collapseSection(ref.current);
       setTrack(!track);
     }

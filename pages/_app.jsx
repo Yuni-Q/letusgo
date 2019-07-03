@@ -91,7 +91,10 @@ const configureStore = (initialState, options) => {
   const middlewares = [
     sagaMiddleware,
     store => next => action => {
-      console.log(store, action);
+      if (process.env.NODE_ENV !== 'production') {
+        console.log(store, action);
+      }
+
       next(action);
     },
   ];
