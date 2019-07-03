@@ -5,14 +5,21 @@ import styled from 'styled-components';
 import { color } from '../common/color';
 import ScheduleSectionDetail from './ScheduleSectionDetail';
 
+const StyledMainInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 const StyledScheduleSession = styled.div`
+  position: relative;
   box-sizing: border-box;
   height: auto;
+  align-items: center;
   padding: ${props => {
     if (props.scale) {
-      return '70px 0';
+      return '90px 0 0';
     }
-    return '20px 0';
+    return '35px 0 0';
   }};
   margin: 8px 0;
   min-height: ${props => {
@@ -83,7 +90,7 @@ const ScheduleSession = ({
   };
   return (
     <StyledScheduleSession onClick={onClick} scale={scale} track={track}>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <StyledMainInfo track={track}>
         <div style={{ display: 'flex' }}>
           <div
             style={{
@@ -134,7 +141,7 @@ const ScheduleSession = ({
             )}
           </div>
         )}
-      </div>
+      </StyledMainInfo>
       <ScheduleSectionDetail
         ref={ref}
         delayTime={500}
