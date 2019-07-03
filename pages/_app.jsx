@@ -50,7 +50,7 @@ const MyApp = ({ Component, store, pageProps }) => (
           {
             rel: 'shortcut icon',
             href:
-              'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_app_web.svg',
+              'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/favicon.ico',
           },
           {
             rel: 'stylesheet',
