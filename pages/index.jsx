@@ -395,7 +395,8 @@ const Index = () => {
                 name: '구범모',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/ku.jpeg',
-                description: 'Jump into iPadOS13',
+                description:
+                  'iPadOS 13 앱 Step by Step\n멀티윈도우, PencilKit 등을 활용해 iPadOS 13 앱을 만들어 봅니다',
                 scale: 2,
                 infos: [
                   {
@@ -436,7 +437,7 @@ const Index = () => {
                 name: '엉덩숭아',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/un.png',
-                description: 'DisposeBag에 대하여 알아봅시다.',
+                description: 'DisposeBag에 대하여 알아봅시다',
                 infos: [],
               },
               {
