@@ -448,7 +448,7 @@ const Index = () => {
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/bot.png',
                 description:
-                  '뷰컨트롤러와 뷰의 생명주기에 대해 좀 더 자세히 살펴보기',
+                  'iOS의 여러 생명주기에 초점을 맞춰 이야기해보는 시간입니다.\n\n생명주기에 관한 알쓸신잡!\n시스템 메서드의 호출 시점이나 순서에 관한 사소한 팁이나 주의 사항에 대해 알아보고\niOS13에서는 새롭게 어떤 점이 달라졌는지 다뤄보려고 합니다.\n',
                 scale: 2,
                 infos: [{ title: '이메일', description: 'giftbott@gmail.com' }],
               },

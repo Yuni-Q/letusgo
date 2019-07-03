@@ -20,9 +20,9 @@ const StyledScheduleSession = styled.div`
       return 'auto';
     }
     if (props.scale) {
-      return '206px';
+      return '228px';
     }
-    return '84px';
+    return '110px';
   }};
   background-color: ${color.littleWhite};
   @media (max-width: 950px) {
@@ -101,7 +101,15 @@ const ScheduleSession = ({
               lineHeight: '22px',
             }}
           >
-            <div style={{ fontWeight: 'bold', fontSize: '20px' }}>{title}</div>
+            <div
+              style={{
+                fontWeight: 'bold',
+                fontSize: '20px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {title}
+            </div>
             <div style={{ fontSize: '16px' }}>{name}</div>
           </div>
         </div>
