@@ -191,7 +191,7 @@ const Index = () => {
                 start: '13:40',
                 end: '14:00',
                 title: '인디 앱 수입으로 월세 내기',
-                name: '전미정',
+                name: '미정',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/mi.png',
                 description:
@@ -416,7 +416,7 @@ const Index = () => {
                     description: '@gbmksquare',
                   },
                   {
-                    title: '페북',
+                    title: '페이스북',
                     description: 'fb.com/gbmksquare',
                   },
                 ],
@@ -434,10 +434,11 @@ const Index = () => {
                 start: '16:40',
                 end: '17:10',
                 title: 'RxSwift Internal',
-                name: '엉덩숭아',
+                name: '숭아',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/un.png',
-                description: 'DisposeBag에 대하여 알아봅시다',
+                description:
+                  'DisposeBag에 대하여 알아봅시다.\n(실습의 비중이 적은 설명 위주의 세션입니다)',
                 infos: [],
               },
               {

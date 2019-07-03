@@ -32,6 +32,7 @@ const Menu = () => {
         backgroundColor: color.warmwhite,
         height: '60px',
         alignItems: 'center',
+        zIndex: 1,
       }}
     >
       <div
