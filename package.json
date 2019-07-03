@@ -9,7 +9,7 @@
     "prestart": "npm run build",
     "start": "node server.js",
     "predeloy": "npm run build",
-    "deploy": "git pull && npm install && npm run build && pm2 start ecosystem.config.js --env production",
+    "deploy": "git pull origin master && npm install && npm run build && pm2 start ecosystem.config.js --env production",
     "export": "npm run build && next export"
   },
   "author": "Yuni-Q",
