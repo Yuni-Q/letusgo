@@ -6,6 +6,17 @@ import Track from '../components/Track';
 import { StyledButton } from '../common/styledComponents';
 import { color } from '../common/color';
 
+const StyledTitle = styled.div`
+  color: ${color.littleWhite};
+  font-size: 35px;
+  line-height: 45px;
+  word-break: break-all;
+  // @media (max-width: 370px) {
+  //   font-size: 28px;
+  //   line-height: 35px;
+  // }
+`;
+
 const StyledSponserProductSerport = styled.div`
   @media (max-width: 950px) {
     display: flex;
@@ -85,8 +96,7 @@ const Index = () => {
         <img
           style={{
             width: '100vw',
-            minWidth: '960px',
-            minHeight: '300px',
+            minHeight: '350px',
             objectFit: 'cover',
             height: '39.37vw',
             position: 'absolute',
@@ -108,25 +118,22 @@ const Index = () => {
           }}
         >
           <img
-            style={{ width: '130px', height: '130px', margin: '0 32px 0 0' }}
+            style={{
+              maxWidth: '130px',
+              maxHeight: '130px',
+              margin: '0 32px 0 0',
+            }}
             src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_app_web.svg"
             alt=""
           />
-          <div
-            style={{
-              color: color.littleWhite,
-              fontSize: '35px',
-              lineHeight: '45px',
-              margin: '0 16px 0 0',
-            }}
-          >
+          <StyledTitle>
             let us: GO!
             <br />
             iOS Developers Korea
             <br />
             [2019 Summer]
             <br />
-          </div>
+          </StyledTitle>
         </div>
         <div
           style={{

@@ -5,6 +5,16 @@ import styled from 'styled-components';
 import { color } from '../common/color';
 import ScheduleSectionDetail from './ScheduleSectionDetail';
 
+const StyledSectionTitle = styled.div`
+  font-weight: bold;
+  font-size: 20px;
+  word-break: break-all;
+  white-space: nowrap;
+  @media (max-width: 950px) {
+    white-space: pre-wrap;
+  }
+`;
+
 const StyledMainInfo = styled.div`
   display: flex;
   justify-content: space-between;
@@ -35,7 +45,7 @@ const StyledScheduleSession = styled.div`
   @media (max-width: 950px) {
     margin: 8px 16px;
     height: auto;
-    padding: 20px 0;
+    padding: 40px 0 0;
   }
 `;
 
@@ -99,20 +109,11 @@ const ScheduleSession = ({
           </div>
           <div
             style={{
-              maxmaxWidth: '174px',
               margin: '0 24px 0 0',
               lineHeight: '22px',
             }}
           >
-            <div
-              style={{
-                fontWeight: 'bold',
-                fontSize: '20px',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              {title}
-            </div>
+            <StyledSectionTitle>{title}</StyledSectionTitle>
             <div style={{ fontSize: '16px' }}>{name}</div>
           </div>
         </div>
