@@ -20,7 +20,7 @@ const StyledScheduleSession = styled.div`
       return 'auto';
     }
     if (props.scale) {
-      return '205px';
+      return '206px';
     }
     return '84px';
   }};
