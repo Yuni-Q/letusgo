@@ -270,11 +270,11 @@ const Index = () => {
               {
                 start: '16:10',
                 end: '16:30',
-                title: '비전공 개발자',
+                title: '그래요 저 비전공 개발자에요..',
                 name: 'Yo!',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/yo.png',
-                description: '비전공 개발자로 살아온 개발자의 인생 팁',
+                description: '비전공 개발자로 살아가기 어떠신가요?',
                 infos: [],
               },
               {
@@ -294,7 +294,7 @@ const Index = () => {
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/j.png',
                 description:
-                  'Xcod11, iOS13의 변경점들을 톺아보고 iOS13에서 생기는 디자인 이슈들에 대응해 봅시다',
+                  'Xcode11, iOS13의 변경점들을 톺아보고 iOS13에서 생기는 디자인 이슈들에 대응해 봅시다',
                 infos: [],
               },
               {
@@ -391,12 +391,12 @@ const Index = () => {
               {
                 start: '15:40',
                 end: '16:30',
-                title: 'Jump into iPadOS13',
+                title: 'iPadOS 13 앱 Step by Step',
                 name: '구범모',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/ku.jpeg',
                 description:
-                  'iPadOS 13 앱 Step by Step\n멀티윈도우, PencilKit 등을 활용해 iPadOS 13 앱을 만들어 봅니다',
+                  '멀티윈도우, PencilKit 등을 활용해 iPadOS 13 앱을 만들어 봅니다',
                 scale: 2,
                 infos: [
                   {
