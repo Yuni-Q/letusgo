@@ -27,9 +27,9 @@ const StyledScheduleSession = styled.div`
       return 'auto';
     }
     if (props.scale) {
-      return '228px';
+      return '244px';
     }
-    return '110px';
+    return '118px';
   }};
   background-color: ${color.littleWhite};
   @media (max-width: 950px) {
