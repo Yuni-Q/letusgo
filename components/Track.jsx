@@ -29,9 +29,10 @@ const StyledTrackInfo1 = styled.div`
   background-color: ${color.littleWhite};
   display: flex;
   max-height: 113px;
+  margin: 0 0 8px;
   justify-content: space-between;
   @media (max-width: 950px) {
-    margin: 0 16px;
+    margin: 0 16px 8px;
     max-height: none;
   }
 `;
@@ -48,7 +49,7 @@ const StyledSplitCard = styled.div`
   background-color: ${color.littleWhite};
   width: calc(50vw - 4px);
   max-width: 226px;
-  margin: 8px 0;
+  margin: 0 0 8px;
   display: flex;
   justify-content: space-between;
   @media (max-width: 950px) {
@@ -87,6 +88,19 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
               lineHeight: '20px',
             }}
           >
+            <div>행사 일자</div>
+          </div>
+          <div style={{ margin: '44px 16px 14px 0', lineHeight: '24px' }}>
+            <div>2019. 08.03. (토) 오후 1시 ~ 6시</div>
+          </div>
+        </StyledTrackInfo1>
+        <StyledTrackInfo1>
+          <div
+            style={{
+              margin: '18px 20px 35px 18px',
+              lineHeight: '20px',
+            }}
+          >
             <div>참가비</div>
             <div>
               <pre
@@ -107,7 +121,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
         <StyledTrackInfo2>
           <StyledSplitCard
             style={{
-              margin: '8px 8px 8px 0',
+              margin: '0 8px 8px 0',
             }}
           >
             <div
@@ -154,7 +168,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
         })} */}
       </div>
       <StyledSchedule>Schedule</StyledSchedule>
-      <div
+      {/* <div
         style={{
           display: 'flex',
           // borderBottom: `2px solid ${color.grapefruit}`,
@@ -171,7 +185,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
           <hr style={{ border: `solid 1px ${color.grapefruit}` }} />
         </div>
         <div>Now</div>
-      </div>
+      </div> */}
       {schedule.map((info, idx) => {
         return (
           <ScheduleSession
