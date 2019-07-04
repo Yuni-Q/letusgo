@@ -8,7 +8,7 @@ import { color } from '../common/color';
 const StyledTrack = styled.div`
   width: 100vw;
   margin: 0 10px 60px 10px;
-  maxwidth: 460px;
+  max-width: 460px;
   @media (max-width: 950px) {
     margin: 0 0 60px;
   }

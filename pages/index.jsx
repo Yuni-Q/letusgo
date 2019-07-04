@@ -441,7 +441,7 @@ const Index = () => {
                 start: '16:40',
                 end: '17:10',
                 title: 'RxSwift Internal',
-                name: '숭아',
+                name: '엉덩숭아',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/un.png',
                 description:

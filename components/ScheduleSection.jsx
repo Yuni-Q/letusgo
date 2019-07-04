@@ -7,7 +7,7 @@ import ScheduleSectionDetail from './ScheduleSectionDetail';
 
 const StyledSectionTitle = styled.div`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   word-break: break-all;
   white-space: nowrap;
   @media (max-width: 950px) {

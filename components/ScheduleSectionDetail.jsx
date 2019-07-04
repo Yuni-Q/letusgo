@@ -42,9 +42,15 @@ const ScheduleSectionDetail = React.forwardRef(
             }}
           />
         </div>
-        <div style={{ padding: '0 0 16px 0', lineHeight: '22px' }}>
+        <pre
+          style={{
+            padding: '0 0 16px 0',
+            lineHeight: '22px',
+            whiteSpace: 'pre-wrap',
+          }}
+        >
           {description}
-        </div>
+        </pre>
         {infos.map((info, idx) => {
           return (
             <ScheduleSectionDetailInfo
