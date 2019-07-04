@@ -478,7 +478,11 @@ const Index = () => {
             }}
           />
         </StyledLayout>
-        <StyledButton>
+        <StyledButton
+          onClick={() => {
+            window.location.href = 'https://forms.gle/jwLwjFdMapCsvDjG7';
+          }}
+        >
           <div
             style={{
               // border: `0px solid ${color.black}`,
