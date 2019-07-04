@@ -46,6 +46,7 @@ const StyledScheduleSession = styled.div`
     margin: 8px 16px;
     height: auto;
     padding: 40px 0 0;
+    min-height: auto;
   }
 `;
 
@@ -111,6 +112,9 @@ const ScheduleSession = ({
             style={{
               margin: '0 24px 0 0',
               lineHeight: '22px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
             }}
           >
             <StyledSectionTitle>{title}</StyledSectionTitle>
