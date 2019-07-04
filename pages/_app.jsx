@@ -22,7 +22,7 @@ const MyApp = ({ Component, store, pageProps }) => (
   <Container>
     <Provider store={store}>
       <Helmet
-        title="letusgo"
+        title="let us: Go! 2019 Summer"
         htmlAttributes={{ lang: 'ko' }}
         meta={[
           {
@@ -40,6 +40,10 @@ const MyApp = ({ Component, store, pageProps }) => (
           {
             name: 'description',
             content: 'letusgo',
+          },
+          {
+            property: 'og:title',
+            content: 'let us: Go! 2019 Summer',
           },
           {
             property: 'og:type',
