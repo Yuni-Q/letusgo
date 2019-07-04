@@ -491,7 +491,7 @@ const Index = () => {
               backgroundColor: color.black,
             }}
           >
-            7월 8일 15시부터 신청 가능합니다.
+            신청하기
           </div>
         </StyledButton>
       </StyledIndex>
