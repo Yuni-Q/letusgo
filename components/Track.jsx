@@ -91,7 +91,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
             <div>행사 일자</div>
           </div>
           <div style={{ margin: '44px 16px 14px 0', lineHeight: '24px' }}>
-            <div>2019. 08.03. (토) 오후 1시 ~ 6시</div>
+            <div>2019. 08.03. (토)</div>
           </div>
         </StyledTrackInfo1>
         <StyledTrackInfo1>
