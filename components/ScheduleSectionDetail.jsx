@@ -15,52 +15,54 @@ const StyledScheduleSectionDetail = styled.div`
 const ScheduleSectionDetail = React.forwardRef(
   ({ show, infos, image, description }, ref) => {
     return (
-      <StyledScheduleSectionDetail
-        ref={ref}
-        show={show}
-        style={{
-          padding: '15px 16px 0 96px',
-          borderTop: show ? `1px solid ${color.veryLightPink}` : 0,
-          margin: '24px 0 0 0 ',
-          maxwidth: '100vw',
-        }}
-      >
-        <div
+      description.length > 0 && (
+        <StyledScheduleSectionDetail
+          ref={ref}
+          show={show}
           style={{
-            padding: '0 0 16px 0',
+            padding: '15px 16px 0 96px',
+            borderTop: show ? `1px solid ${color.veryLightPink}` : 0,
+            margin: '24px 0 0 0 ',
+            maxwidth: '100vw',
           }}
         >
-          <img
-            src={image}
-            alt=""
+          <div
             style={{
-              width: '100vw',
-              maxwidth: '100vw',
-              maxWidth: '151px',
-              height: '151px',
               padding: '0 0 16px 0',
             }}
-          />
-        </div>
-        <pre
-          style={{
-            padding: '0 0 16px 0',
-            lineHeight: '22px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          {description}
-        </pre>
-        {infos.map((info, idx) => {
-          return (
-            <ScheduleSectionDetailInfo
-              key={idx}
-              title={info.title}
-              description={info.description}
+          >
+            <img
+              src={image}
+              alt=""
+              style={{
+                width: '100vw',
+                maxwidth: '100vw',
+                maxWidth: '151px',
+                height: '151px',
+                padding: '0 0 16px 0',
+              }}
             />
-          );
-        })}
-      </StyledScheduleSectionDetail>
+          </div>
+          <pre
+            style={{
+              padding: '0 0 16px 0',
+              lineHeight: '22px',
+              whiteSpace: 'pre-wrap',
+            }}
+          >
+            {description}
+          </pre>
+          {infos.map((info, idx) => {
+            return (
+              <ScheduleSectionDetailInfo
+                key={idx}
+                title={info.title}
+                description={info.description}
+              />
+            );
+          })}
+        </StyledScheduleSectionDetail>
+      )
     );
   },
 );

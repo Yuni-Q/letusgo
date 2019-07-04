@@ -45,7 +45,7 @@ const StyledScheduleSession = styled.div`
   @media (max-width: 950px) {
     margin: 8px 16px;
     height: auto;
-    padding: 40px 0 0;
+    padding: 20px 0;
     min-height: auto;
   }
 `;
