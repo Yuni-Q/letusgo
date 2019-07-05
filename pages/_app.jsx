@@ -49,6 +49,19 @@ const MyApp = ({ Component, store, pageProps }) => (
             property: 'og:type',
             content: 'website',
           },
+          {
+            property: 'og:site_name',
+            content: 'let us: Go! 2019 Summer',
+          },
+          {
+            property: 'og:url',
+            content: 'https://letusgo.app',
+          },
+          {
+            property: 'og:image',
+            content:
+              'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/ogImg.png',
+          },
         ]}
         link={[
           {
