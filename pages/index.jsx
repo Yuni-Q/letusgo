@@ -285,7 +285,7 @@ const Index = () => {
                 infos: [],
               },
               {
-                start: '16:00',
+                start: '16:30',
                 end: '16:40',
                 title: '쉬는시간',
                 name: '',
@@ -294,7 +294,7 @@ const Index = () => {
                 infos: [],
               },
               {
-                start: '16:50',
+                start: '16:40',
                 end: '17:10',
                 title: `What's new in Xcode / iOS13`,
                 name: '재르시',
