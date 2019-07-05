@@ -7,7 +7,7 @@ import ScheduleSectionDetail from './ScheduleSectionDetail';
 
 const StyledSectionTitle = styled.div`
   font-weight: bold;
-  font-size: 19px;
+  font-size: 18px;
   word-break: break-all;
   white-space: nowrap;
   @media (max-width: 950px) {
@@ -45,7 +45,7 @@ const StyledScheduleSession = styled.div`
   @media (max-width: 950px) {
     margin: 8px 16px;
     height: auto;
-    padding: 20px 0;
+    padding: ${props => (props.description ? '39px 0 0' : '20px 0')};
     min-height: auto;
   }
 `;
@@ -96,7 +96,12 @@ const ScheduleSession = ({
     }
   };
   return (
-    <StyledScheduleSession onClick={onClick} scale={scale} track={track}>
+    <StyledScheduleSession
+      onClick={onClick}
+      scale={scale}
+      track={track}
+      description={description.length > 0}
+    >
       <StyledMainInfo track={track}>
         <div style={{ display: 'flex' }}>
           <div
@@ -145,8 +150,6 @@ const ScheduleSession = ({
       </StyledMainInfo>
       <ScheduleSectionDetail
         ref={ref}
-        delayTime={500}
-        isMounted={!!track}
         show={!!track}
         infos={infos}
         image={image}
