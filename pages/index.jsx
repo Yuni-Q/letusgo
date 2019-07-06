@@ -535,7 +535,15 @@ const Index = () => {
             <img
               src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/hanbit-logo-940px-1.svg"
               width="200px"
-              style={{ margin: '0 0 28px 0' }}
+              style={{ margin: '0' }}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/socar.svg"
+              width="200px"
+              style={{ margin: '12px 0 28px 0' }}
               alt=""
             />
           </div>
