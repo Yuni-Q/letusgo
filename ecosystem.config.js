@@ -4,7 +4,7 @@ module.exports = {
       name: 'Yuni-Q_letusgo',
       script: './server.js',
       exec_mode: 'cluster',
-      instances: '4',
+      instances: '10',
       instance_var: 'INSTANCE_ID',
       env: {
         NODE_ENV: 'development',
