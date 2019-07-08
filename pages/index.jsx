@@ -479,6 +479,7 @@ const Index = () => {
           />
         </StyledLayout>
         <StyledButton
+          id="googleForm"
           className="googleForm"
           onClick={() => {
             window.location.href = 'https://forms.gle/jwLwjFdMapCsvDjG7';
