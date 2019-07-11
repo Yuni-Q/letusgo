@@ -1,6 +1,13 @@
-## Setting
+<h1 align="center">Welcome to letusgo 👋</h1>
+<p>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-```bash
+### 🏠 [Homepage](https://letusgo.app)
+
+## Install
+
+```sh
 git clone https://github.com/Yuni-Q/proj2
 cd proj2
 npm i
@@ -11,20 +18,38 @@ npm run build
 - node : v8.15.0
 - npm : 6.9.0
 
-## 로컬 실행
+## Test
 
-```bash
+```sh
 npm run dev
 ```
 
-## 배포 환경으로 실행
+## Usage
 
-```bash
+```sh
 npm run start
 ```
 
-### pm2로 멀티 프로세스 실행
+### deploy
 
-```bash
+```sh
 npm run prod
 ```
+
+## Author
+
+👤 **Yuni-Q**
+
+- Github: [@Yuni-Q](https://github.com/Yuni-Q)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Yuni-Q/proj2/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
