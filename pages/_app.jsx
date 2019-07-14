@@ -95,9 +95,9 @@ const configureStore = (initialState, options) => {
     sagaMiddleware,
     store => next => action => {
       if (process.env.NODE_ENV !== 'production') {
+        // eslint-disable-next-line no-console
         console.log(store, action);
       }
-
       next(action);
     },
   ];
