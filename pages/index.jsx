@@ -451,12 +451,12 @@ const Index = () => {
               {
                 start: '17:10',
                 end: '17:50',
-                title: 'LifeCycle in detail',
+                title: 'App Lifecycle',
                 name: 'giftbot',
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/bot.png',
                 description:
-                  'iOS의 여러 생명주기에 초점을 맞춰 이야기해보는 시간입니다.\n\n생명주기에 관한 알쓸신잡!\n시스템 메서드의 호출 시점이나 순서에 관한 사소한 팁이나 주의 사항에 대해 알아보고\niOS13에서는 새롭게 어떤 점이 달라졌는지 다뤄보려고 합니다.\n',
+                  'App Lifecycle에 대해 다루는 시간입니다.\n새로 추가되거나 변경된 내용들을 함께 살펴볼까요?',
                 scale: 2,
                 infos: [{ title: '이메일', description: 'giftbott@gmail.com' }],
               },
@@ -560,20 +560,34 @@ const Index = () => {
       </StyledSponserSection>
       <StyledSponserSection>
         <StyledSponserTier>물품 지원</StyledSponserTier>
-        <StyledSponserProductSerport>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          <StyledSponserProductSerport>
+            <img
+              src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_yagom.svg"
+              width="40px"
+              style={{ margin: '28px 65px 28px 0' }}
+              alt=""
+            />
+            <img
+              src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_line.svg"
+              width="80px"
+              style={{ margin: '28px 0' }}
+              alt=""
+            />
+          </StyledSponserProductSerport>
           <img
-            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_yagom.svg"
-            width="40px"
-            style={{ margin: '28px 65px 28px 0' }}
-            alt=""
-          />
-          <img
-            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/sponser_support_line.svg"
+            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/kcoding.png"
             width="80px"
             style={{ margin: '28px 0' }}
             alt=""
           />
-        </StyledSponserProductSerport>
+        </div>
       </StyledSponserSection>
       <StyledSponserSection>
         <StyledSponserTier>주관</StyledSponserTier>
