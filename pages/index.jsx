@@ -321,7 +321,7 @@ const Index = () => {
                 image:
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/profile_wanbok.jpeg',
                 description:
-                  'WWDC주요 세션 내용 간략히 소개하고, wwdc참가시 잘 즐기는 꿀 팁 소개',
+                  'WWDC 2019 주요 세션을 살펴봅니다.\nWWDC를 준비하고, 즐기는 노하우는 부록입니다.',
                 infos: [],
               },
               {
