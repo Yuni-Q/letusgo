@@ -1,27 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { color } from '../common/color';
-
 const StyledFooter = styled.div`
+  width: 100vw;
+  padding-left: 4.375rem;
+  padding-right: 4.025rem;
+`;
+
+const StyledIcons = styled.div`
+  display: flex;
+`;
+
+const StyledIcon = styled.img`
+  width: 1.75rem;
+`;
+
+const StyledInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 81px;
-  align-items: center;
-  max-width: 960px;
-  width: 100vw;
-  @media (max-width: 950px) {
-    height: auto;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justifycontent: center;
-    align-items: center;
-    img {
-      margin 20px;
-    }
+  margin-bottom: 0.375rem;
+`;
 
-  }
+const StyledInfoTitle = styled.div`
+  font-size: 20px;
+  color: rgb(72, 233, 147);
+  font-family: SFProDisplay-Medium;
+`;
+
+const StyledText = styled.div`
+  font-size: 14px;
+  margin-bottom: 2.9375rem;
+`;
+
+const StyledText2 = styled.div`
+  font-size: 14px;
+  margin-bottom: 1.875rem;
 `;
 
 const Footer = () => {
@@ -33,46 +46,25 @@ const Footer = () => {
     window.location.href = 'https://open.kakao.com/o/gyLape';
   };
   return (
-    <div>
-      <div
-        style={{
-          bottom: 0,
-          left: 0,
-          width: '100vw',
-          display: 'flex',
-          justifyContent: 'center',
-          border: `1px solid ${color.black}`,
-        }}
-      >
-        <StyledFooter>
-          <img
-            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/logo-let-us-go.svg"
+    <StyledFooter>
+      <StyledInfo>
+        <StyledInfoTitle>© Let Us: Go!</StyledInfoTitle>
+        <StyledIcons>
+          <StyledIcon
+            onClick={onClickMail}
+            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_message.svg"
             alt=""
           />
-          <div>© iOS Developers Korea</div>
-          <div style={{ display: 'flex' }}>
-            <img
-              onClick={onClickMail}
-              style={{
-                width: '40px',
-                height: '40px',
-              }}
-              src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_message.svg"
-              alt=""
-            />
-            <img
-              onClick={onClickPhone}
-              style={{
-                width: '40px',
-                height: '40px',
-              }}
-              src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_telephone.svg"
-              alt=""
-            />
-          </div>
-        </StyledFooter>
-      </div>
-    </div>
+          <StyledIcon
+            onClick={onClickPhone}
+            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/icon_telephone.svg"
+            alt=""
+          />
+        </StyledIcons>
+      </StyledInfo>
+      <StyledText>iOS Developers Korea</StyledText>
+      <StyledText2>© iOS Developers Korea</StyledText2>
+    </StyledFooter>
   );
 };
 

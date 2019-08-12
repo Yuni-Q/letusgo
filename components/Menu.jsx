@@ -21,13 +21,14 @@ const StyledYearText = styled.div`
   font-family: SFProDisplay-Light;
   font-size: 1.25rem;
   margin-left: 1.4375rem;
+  cursor: pointer;
 `;
 
 const Menu = () => {
   return (
     <StyledMenu>
       <StyledImage
-        src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg"
+        src="https://scontent-lhr3-1.cdninstagram.com/v/t51.2885-15/e35/58410044_592029371303603_8118342681571080194_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com&se=8&oh=5e802bbaa9df232946416270924e1a3e&oe=5DDDB490&ig_cache_key=MjAyOTg0NjM4MTkzOTAzNjU5NA%3D%3D.2"
         alt="img"
       />
       <StyledYearText>2019</StyledYearText>
