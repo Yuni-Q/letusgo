@@ -19,12 +19,14 @@ const StyledTitle = styled.div`
 `;
 
 const StyledDescription = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
 `;
 
 const StyledSpeaker = styled.div`
+  visibility: hidden;
   font-size: 20px;
   margin-left: 0.625rem;
   margin-right: 1.25rem;
@@ -32,6 +34,19 @@ const StyledSpeaker = styled.div`
 
 const StyledBelong = styled.div`
   color: rgb(109, 114, 120);
+  font-size: 14px;
+`;
+
+const StyledHr = styled.div`
+  margin: 0;
+  margin-left: 0.625rem;
+  color: rgb(72, 233, 147);
+  border: 0;
+  background-color: rgb(72, 233, 147);
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: calc(100% - 0.625rem - 1.25rem);
 `;
 
 const Session = () => {
@@ -43,7 +58,15 @@ const Session = () => {
       />
       <StyledTitle>Session.Title</StyledTitle>
       <StyledDescription>
-        <StyledSpeaker>이다민</StyledSpeaker>
+        <div style={{ position: 'relative' }}>
+          <StyledHr />
+          <StyledSpeaker>이다민</StyledSpeaker>
+          <StyledSpeaker
+            style={{ position: 'absolute', bottom: 0, visibility: 'visible' }}
+          >
+            이다민
+          </StyledSpeaker>
+        </div>
         <StyledBelong>소속</StyledBelong>
       </StyledDescription>
     </StyledSession>
