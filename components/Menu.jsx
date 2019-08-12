@@ -1,111 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { color } from '../common/color';
-import { Link } from '../routes';
+// import { color } from '../common/color';
+// import { Link } from '../routes';
 
-const StyledLogo = styled.img`
-  max-width: 94px;
-  width: 80vw;
-  @media (max-width: 950px) {
-    margin: 0 0 0 29px;
-  }
+const StyledMenu = styled.div`
+  display: flex;
+  height: 3.75rem;
+  align-items: center;
+  width: 100vw;
 `;
 
-const StyledNavigation = styled.div`
-  display: none;
-  @media (max-width: 950px) {
-    display: none;
-  }
+const StyledImage = styled.img`
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.625rem 0.75rem;
+`;
+
+const StyledYearText = styled.div`
+  font-family: SFProDisplay-Light;
+  font-size: 1.25rem;
+  margin-left: 1.4375rem;
 `;
 
 const Menu = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        position: 'fixed',
-        top: 0,
-        right: 0,
-        width: '100vw',
-        backgroundColor: color.warmwhite,
-        height: '60px',
-        alignItems: 'center',
-        zIndex: 1,
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '960px',
-          width: '100vw',
-          display: 'flex',
-          justifyContent: 'space-between',
-        }}
-      >
-        <div
-          style={{
-            fontSize: '20px',
-            fontWeight: 'bold',
-          }}
-        >
-          <StyledLogo
-            src="https://letusgo-front.s3.ap-northeast-2.amazonaws.com/let-us-go.svg"
-            alt=""
-          />
-        </div>
-        <StyledNavigation>
-          {/* <Link route="/login" href="/login"> */}
-          <div
-            onClick={() => alert('준비중입니다.')}
-            style={{
-              margin: '0 62px 0 0',
-              fontWeight: 'bold',
-              fontSize: '15px',
-            }}
-          >
-            login
-          </div>
-          {/* </Link> */}
-          <Link route="/" href="/">
-            <div
-              style={{
-                margin: '0 62px 0 0',
-                color: color.grapefruit,
-                fontWeight: 'bold',
-                fontSize: '15px',
-              }}
-            >
-              Now
-            </div>
-          </Link>
-          <Link route="/session" href="/session">
-            <div
-              style={{
-                margin: '0 62px',
-                color: color.grapefruit,
-                fontWeight: 'bold',
-                fontSize: '15px',
-              }}
-            >
-              Session
-            </div>
-          </Link>
-          <Link route="/my" href="/my">
-            <div
-              style={{
-                margin: '0 62px',
-                color: color.grapefruit,
-                fontWeight: 'bold',
-                fontSize: '15px',
-              }}
-            >
-              My
-            </div>
-          </Link>
-        </StyledNavigation>
-      </div>
-    </div>
+    <StyledMenu>
+      <StyledImage
+        src="https://pbs.twimg.com/media/DuqiMgCUYAEhDDw.jpg"
+        alt="img"
+      />
+      <StyledYearText>2019</StyledYearText>
+    </StyledMenu>
   );
 };
 
