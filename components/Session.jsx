@@ -1,52 +1,59 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledSession = styled.div`
-  width: 17.875rem;
+const StyledSession = styled.section`
   margin: 0 0.375rem;
+  width: 17.875rem;
 `;
 
 const StyledImg = styled.img`
+  margin-bottom: 1.6875rem;
   width: 17.875rem;
-  margin-bottom: 1.6875rem;
 `;
 
-const StyledTitle = styled.div`
-  font-size: 26px;
-  margin-left: 0.625rem;
-  margin-bottom: 1.6875rem;
+const StyledTitle = styled.h1`
+  font-size: 1.625rem;
   height: 4.5rem;
+  margin: 0 0 1.6875rem 0.625rem;
 `;
 
-const StyledDescription = styled.div`
-  position: relative;
-  display: flex;
+const StyledDescription = styled.section`
   align-items: center;
+  display: flex;
   margin-bottom: 1.5rem;
 `;
 
-const StyledSpeaker = styled.div`
+const StyledSpeakerHidden = styled.h3`
   visibility: hidden;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-left: 0.625rem;
   margin-right: 1.25rem;
 `;
 
-const StyledBelong = styled.div`
-  color: rgb(109, 114, 120);
-  font-size: 14px;
-`;
-
-const StyledHr = styled.div`
-  margin: 0;
-  margin-left: 0.625rem;
-  color: rgb(72, 233, 147);
-  border: 0;
-  background-color: rgb(72, 233, 147);
+const StyledSpeakerVisible = styled(StyledSpeakerHidden)`
   position: absolute;
   bottom: 0;
-  height: 5px;
-  width: calc(100% - 0.625rem - 1.25rem);
+  visibility: visible;
+`;
+
+const StyledBelong = styled.h3`
+  color: rgb(109, 114, 120);
+  font-size: 0.875rem;
+`;
+
+const StyledSpeakerWrapper = styled.section`
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0.625rem;
+    color: rgb(72, 233, 147);
+    background-color: rgb(72, 233, 147);
+    height: 0.3125rem;
+    width: calc(100% - 0.625rem - 1.25rem);
+  }
 `;
 
 const Session = () => {
@@ -58,15 +65,10 @@ const Session = () => {
       />
       <StyledTitle>Session.Title</StyledTitle>
       <StyledDescription>
-        <div style={{ position: 'relative' }}>
-          <StyledHr />
-          <StyledSpeaker>이다민</StyledSpeaker>
-          <StyledSpeaker
-            style={{ position: 'absolute', bottom: 0, visibility: 'visible' }}
-          >
-            이다민
-          </StyledSpeaker>
-        </div>
+        <StyledSpeakerWrapper>
+          <StyledSpeakerHidden>이다민</StyledSpeakerHidden>
+          <StyledSpeakerVisible>이다민</StyledSpeakerVisible>
+        </StyledSpeakerWrapper>
         <StyledBelong>소속</StyledBelong>
       </StyledDescription>
     </StyledSession>

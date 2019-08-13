@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // import { color } from '../common/color';
 // import { Link } from '../routes';
 
-const StyledMenu = styled.div`
+const StyledMenu = styled.header`
   display: flex;
   height: 3.75rem;
   align-items: center;
@@ -17,8 +17,8 @@ const StyledImage = styled.img`
   margin: 0.625rem 0.75rem;
 `;
 
-const StyledYearText = styled.div`
-  font-family: SFProDisplay-Light;
+const StyledYearText = styled.h1`
+  font-family: 'SFProDisplay-Light';
   font-size: 1.25rem;
   margin-left: 1.4375rem;
   cursor: pointer;

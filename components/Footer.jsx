@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   width: 100vw;
   padding-left: 4.375rem;
   padding-right: 4.025rem;
@@ -15,25 +15,25 @@ const StyledIcon = styled.img`
   width: 1.75rem;
 `;
 
-const StyledInfo = styled.div`
+const StyledInfo = styled.section`
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.375rem;
 `;
 
-const StyledInfoTitle = styled.div`
-  font-size: 20px;
+const StyledInfoTitle = styled.h1`
+  font-size: 1.25rem;
   color: rgb(72, 233, 147);
   font-family: SFProDisplay-Medium;
 `;
 
-const StyledText = styled.div`
-  font-size: 14px;
+const StyledText = styled.h2`
+  font-size: 0.875rem;
   margin-bottom: 2.9375rem;
 `;
 
-const StyledText2 = styled.div`
-  font-size: 14px;
+const StyledText2 = styled.h2`
+  font-size: 0.875rem;
   margin-bottom: 1.875rem;
 `;
 

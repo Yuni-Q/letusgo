@@ -5,42 +5,39 @@ import Menu from '../components/Menu';
 import Session from '../components/Session';
 import Footer from '../components/Footer';
 
-const StyledIndex = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const StyledSeasonTextWrapper = styled.div`
+const StyledSeasonTextWrapper = styled.section`
   display: flex;
   height: 3.75rem;
   padding-left: 4.3125rem;
   align-items: center;
   width: 100vw;
-  border-bottom: solid 1px rgb(249, 249, 249);
+  border-bottom: solid 0.0625rem rgb(249, 249, 249);
 `;
-const StyledSeasonText = styled.div`
+const StyledSeasonText = styled.h1`
   color: rgb(72, 233, 147);
   margin: 1.25rem 0.9375rem;
   cursor: pointer;
 `;
 
-const StyledSessionsWrapper = styled.div`
+const StyledSessionsWrapper = styled.section`
   margin: 1.875rem 0 6.0625rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 `;
 
-const StyledSessions = styled.div`
+const StyledSessions = styled.section`
   width: 55.875rem;
   background-color: red;
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(249, 249, 249);
+  overflow: scroll;
 `;
 
 const index = () => {
   return (
-    <StyledIndex>
+    <>
       <Menu />
       <StyledSeasonTextWrapper>
         <StyledSeasonText>Spring</StyledSeasonText>
@@ -58,7 +55,7 @@ const index = () => {
         </StyledSessions>
       </StyledSessionsWrapper>
       <Footer />
-    </StyledIndex>
+    </>
   );
 };
 
