@@ -23,17 +23,10 @@ const StyledDescription = styled.section`
   margin-bottom: 1.5rem;
 `;
 
-const StyledSpeakerHidden = styled.h3`
-  visibility: hidden;
+const StyledSpeaker = styled.h3`
   font-size: 1.25rem;
   margin-left: 0.625rem;
   margin-right: 1.25rem;
-`;
-
-const StyledSpeakerVisible = styled(StyledSpeakerHidden)`
-  position: absolute;
-  bottom: 0;
-  visibility: visible;
 `;
 
 const StyledBelong = styled.h3`
@@ -43,7 +36,9 @@ const StyledBelong = styled.h3`
 
 const StyledSpeakerWrapper = styled.section`
   position: relative;
+  z-index: 1;
   &:before {
+    z-index: -1;
     content: '';
     display: block;
     position: absolute;
@@ -66,8 +61,7 @@ const Session = () => {
       <StyledTitle>Session.Title</StyledTitle>
       <StyledDescription>
         <StyledSpeakerWrapper>
-          <StyledSpeakerHidden>이다민</StyledSpeakerHidden>
-          <StyledSpeakerVisible>이다민</StyledSpeakerVisible>
+          <StyledSpeaker>이다민</StyledSpeaker>
         </StyledSpeakerWrapper>
         <StyledBelong>소속</StyledBelong>
       </StyledDescription>
