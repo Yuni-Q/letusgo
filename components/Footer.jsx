@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   width: 100vw;
-  padding-left: 4.375rem;
-  padding-right: 4.025rem;
+  padding: 1.1875rem 4.025rem 1.875rem 4.375rem;
 `;
 
 const StyledIcons = styled.div`
@@ -34,7 +33,6 @@ const StyledText = styled.h2`
 
 const StyledText2 = styled.h2`
   font-size: 0.875rem;
-  margin-bottom: 1.875rem;
 `;
 
 const Footer = () => {

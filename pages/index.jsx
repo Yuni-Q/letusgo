@@ -11,7 +11,7 @@ const StyledSeasonTextWrapper = styled.section`
   padding-left: 4.3125rem;
   align-items: center;
   width: 100vw;
-  border-bottom: solid 0.0625rem rgb(249, 249, 249);
+  border-bottom: solid 0.0625rem rgb(193, 194, 197);
 `;
 const StyledSeasonText = styled.h1`
   color: rgb(72, 233, 147);
@@ -20,18 +20,17 @@ const StyledSeasonText = styled.h1`
 `;
 
 const StyledSessionsWrapper = styled.section`
-  margin: 1.875rem 0 6.0625rem;
+  padding: 1.875rem 0 6.0625rem;
   width: 100vw;
   display: flex;
   justify-content: center;
+  background-color: rgb(249, 249, 249);
 `;
 
 const StyledSessions = styled.section`
   width: 55.875rem;
-  background-color: red;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(249, 249, 249);
   overflow: scroll;
 `;
 
