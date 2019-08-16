@@ -59,12 +59,19 @@ const MyApp = ({ Component, store, pageProps }) => (
             content:
               'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/ogImg.png',
           },
-        ]}
-        link={[
+          {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css',
+          },
           {
             rel: 'shortcut icon',
             href:
               'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/favicon.ico',
+          },
+        ]}
+        link={[
+          {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.js',
           },
         ]}
       />
