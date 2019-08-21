@@ -197,6 +197,7 @@ const Track = ({ title, schedule, trackInfo, pay }) => {
             description={info.description}
             image={info.image}
             infos={info.infos}
+            links={info.links}
             scale={info.scale}
           />
         );

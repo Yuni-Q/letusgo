@@ -56,6 +56,7 @@ const ScheduleSession = ({
   title,
   name,
   infos,
+  links,
   image,
   description,
   scale,
@@ -152,6 +153,7 @@ const ScheduleSession = ({
         ref={ref}
         show={!!track}
         infos={infos}
+        links={links}
         image={image}
         description={description}
       />
@@ -165,6 +167,7 @@ ScheduleSession.propTypes = {
   title: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   infos: PropTypes.array.isRequired,
+  links: PropTypes.array.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   scale: PropTypes.number,

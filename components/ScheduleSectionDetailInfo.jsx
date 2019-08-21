@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const StyledScheduleSectionDetailInfo = styled.div`
   display: flex;
+  margin-bottom: 8px;
 `;
 
 const ScheduleSectionDetailInfo = ({ title, description }) => {

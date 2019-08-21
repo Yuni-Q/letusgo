@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // import AnimatedMount from '../common/AnimatedMount';
 import ScheduleSectionDetailInfo from './ScheduleSectionDetailInfo';
 import { color } from '../common/color';
+import ScheduleSectionDetailLink from './ScheduleSectionDetailLink';
 
 const StyledScheduleSectionDetail = styled.div`
   overflow: hidden;
@@ -13,7 +14,7 @@ const StyledScheduleSectionDetail = styled.div`
 `;
 
 const ScheduleSectionDetail = React.forwardRef(
-  ({ show, infos, image, description }, ref) => {
+  ({ show, infos, links, image, description }, ref) => {
     return (
       description.length > 0 && (
         <StyledScheduleSectionDetail
@@ -52,15 +53,28 @@ const ScheduleSectionDetail = React.forwardRef(
           >
             {description}
           </pre>
-          {infos.map((info, idx) => {
-            return (
-              <ScheduleSectionDetailInfo
-                key={idx}
-                title={info.title}
-                description={info.description}
-              />
-            );
-          })}
+          <div style={{ marginBottom: '16px' }}>
+            {links.map((link, idx) => {
+              return (
+                <ScheduleSectionDetailLink
+                  key={idx}
+                  title={link.title}
+                  description={link.description}
+                />
+              );
+            })}
+          </div>
+          <div style={{ marginBottom: '16px' }}>
+            {infos.map((info, idx) => {
+              return (
+                <ScheduleSectionDetailInfo
+                  key={idx}
+                  title={info.title}
+                  description={info.description}
+                />
+              );
+            })}
+          </div>
         </StyledScheduleSectionDetail>
       )
     );
@@ -70,6 +84,7 @@ const ScheduleSectionDetail = React.forwardRef(
 ScheduleSectionDetail.propTypes = {
   show: PropTypes.bool.isRequired,
   infos: PropTypes.array.isRequired,
+  links: PropTypes.array.isRequired,
   image: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
