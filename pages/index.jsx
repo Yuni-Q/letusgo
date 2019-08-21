@@ -488,7 +488,17 @@ const Index = () => {
                   'https://letusgo-front.s3.ap-northeast-2.amazonaws.com/keywindow.png',
                 description:
                   'SwiftUI를 활용하여 여러 화면을 구현해보면서 느껴보기',
-                links: [],
+                links: [
+                  {
+                    title: '영상',
+                    description: 'https://youtu.be/y438H9bCyJ0',
+                  },
+                  {
+                    title: '슬라이드',
+                    description:
+                      'https://www.slideshare.net/secret/1Os8NGGZvNaJTt',
+                  },
+                ],
                 infos: [],
                 scale: 2,
               },
