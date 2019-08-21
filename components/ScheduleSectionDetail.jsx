@@ -15,6 +15,16 @@ const StyledScheduleSectionDetail = styled.div`
 
 const ScheduleSectionDetail = React.forwardRef(
   ({ show, infos, links, image, description }, ref) => {
+    const youtubeLinks = links.filter(l => {
+      return l.title === '영상';
+    });
+    const otherLinks = links.filter(l => {
+      return l.title !== '영상';
+    });
+    const id =
+      youtubeLinks[0] &&
+      youtubeLinks[0].description &&
+      youtubeLinks[0].description.split('https://youtu.be/')[1];
     return (
       description.length > 0 && (
         <StyledScheduleSectionDetail
@@ -44,6 +54,17 @@ const ScheduleSectionDetail = React.forwardRef(
               }}
             />
           </div>
+          {!!id && (
+            <div>
+              <iframe
+                id="ytplayer"
+                type="text/html"
+                width="100%"
+                src={`http://www.youtube.com/embed/${id}`}
+                frameBorder="0"
+              />
+            </div>
+          )}
           <pre
             style={{
               padding: '0 0 16px 0',
@@ -54,7 +75,7 @@ const ScheduleSectionDetail = React.forwardRef(
             {description}
           </pre>
           <div style={{ marginBottom: '16px' }}>
-            {links.map((link, idx) => {
+            {otherLinks.map((link, idx) => {
               return (
                 <ScheduleSectionDetailLink
                   key={idx}

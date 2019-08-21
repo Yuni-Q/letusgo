@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Track from '../components/Track';
-import { StyledButton } from '../common/styledComponents';
+// import { StyledButton } from '../common/styledComponents';
 import { color } from '../common/color';
 
 import { Link } from '../routes';
@@ -640,7 +640,7 @@ const Index = () => {
             }}
           />
         </StyledLayout>
-        <StyledButton
+        {/* <StyledButton
           onClick={() => {
             window.location.href = 'https://forms.gle/jwLwjFdMapCsvDjG7';
           }}
@@ -655,7 +655,7 @@ const Index = () => {
           >
             신청하기
           </div>
-        </StyledButton>
+        </StyledButton> */}
       </StyledIndex>
       <div
         style={{
