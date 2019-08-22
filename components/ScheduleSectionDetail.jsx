@@ -60,7 +60,7 @@ const ScheduleSectionDetail = React.forwardRef(
                 id="ytplayer"
                 type="text/html"
                 width="100%"
-                src={`http://www.youtube.com/embed/${id}`}
+                src={`https://www.youtube.com/embed/${id}`}
                 frameBorder="0"
               />
             </div>
