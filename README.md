@@ -8,7 +8,7 @@
 ## Install
 
 ```sh
-git clone https://github.com/Yuni-Q/proj2
+git clone https://github.com/Yuni-Q/letusgo
 cd proj2
 npm i
 npm i pm2 -g
@@ -53,3 +53,6 @@ Give a ⭐️ if this project helped you!
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
+[문서](https://api.letusgo.app/doc/)
+[주소](https://letusgo.app)
