@@ -1,8 +1,7 @@
 const routes = require('next-routes');
 
-// const router = routes().add('feed', '/feed/:feedId');
-const router = routes();
-// .add('tiket', '/tiket/:id', 'tiket');
+// routes.add(name, pattern = /name, page = name)
+const router = routes()
 exports.Link = router.Link;
 
 module.exports = router;

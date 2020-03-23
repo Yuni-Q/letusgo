@@ -1,10 +1,10 @@
 module.exports = {
   apps: [
     {
-      name: 'Yuni-Q_letusgo',
+      name: 'study-watson',
       script: './server.js',
       exec_mode: 'cluster',
-      instances: '4',
+      instances: '0',
       instance_var: 'INSTANCE_ID',
       env: {
         NODE_ENV: 'development',

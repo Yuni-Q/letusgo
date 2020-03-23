@@ -1,58 +1,66 @@
-<h1 align="center">Welcome to letusgo 👋</h1>
-<p>
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-</p>
+# TypeScript Next.js example
 
-### 🏠 [Homepage](https://letusgo.app)
+This is a really simple project that show the usage of Next.js with TypeScript.
 
-## Install
+## Deploy your own
 
-```sh
-git clone https://github.com/Yuni-Q/letusgo
-cd proj2
-npm i
-npm i pm2 -g
-npm run build
+Deploy the example using [ZEIT Now](https://zeit.co/now):
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
+
+## How to use it?
+
+### Using `create-next-app`
+
+Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-typescript with-typescript-app
+# or
+yarn create next-app --example with-typescript with-typescript-app
 ```
 
-- node : v8.15.0
-- npm : 6.9.0
+### Download manually
 
-## Test
+Download the example:
 
-```sh
+```bash
+curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript
+cd with-typescript
+```
+
+Install it and run:
+
+```bash
+npm install
 npm run dev
+# or
+yarn
+yarn dev
 ```
 
-## Usage
+Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
 
-```sh
-npm run start
+```bash
+now
 ```
 
-### deploy
+## The idea behind the example
 
-```sh
-npm run prod
+This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+
+```
+npm install --save-dev typescript
 ```
 
-## Author
+To enable TypeScript's features, we install the type declaratons for React and Node.
 
-👤 **Yuni-Q**
+```
+npm install --save-dev @types/react @types/react-dom @types/node
+```
 
-- Github: [@Yuni-Q](https://github.com/Yuni-Q)
+When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
 
-## 🤝 Contributing
+Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Yuni-Q/proj2/issues).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
----
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-
-[문서](https://api.letusgo.app/doc/)
-[주소](https://letusgo.app)
+A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.

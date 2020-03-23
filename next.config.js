@@ -1,14 +1,6 @@
-// const withBundleAnalyzer = require('@zeit/next-bundle-analyzer');
 const webpack = require('webpack');
 
 module.exports = {
-  exportPathMap() {
-    return {
-      '/': { page: '/' },
-      signin: { page: '/signin' },
-      my: { page: '/my' },
-    };
-  },
   distDir: 'build',
   analyzeServer: ['server', 'both'].includes(process.env.BUNDLE_ANALYZE),
   analyzeBrowser: ['browser', 'both'].includes(process.env.BUNDLE_ANALYZE),
@@ -58,6 +50,9 @@ module.exports = {
       plugins: [
         ...plugins,
         new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /^\.\/ko$/),
+        new webpack.DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        }),
       ],
     };
   },
